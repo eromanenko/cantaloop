@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: #020617; /* slate-950 */
+  -webkit-tap-highlight-color: transparent; /* прибирає синій відблиск при натисканні на мобільному */
+}
+
+/* Кастомний скроллбар у стилі гри */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 10px;
+}
