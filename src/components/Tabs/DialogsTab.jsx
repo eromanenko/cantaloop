@@ -8,6 +8,7 @@ export const DialogsTab = ({ data, lang, onCodeClick }) => {
   const scenes = data.dict.filter(item => item.Table === 'scene');
   const filtered = data.dialogs.filter(d => d.Scene === sceneId);
 
+  /* Group dialog lines by their trigger ID */
   const groups = filtered.reduce((acc, item) => {
     const trigger = item.Trigger || 'base';
     if (!acc[trigger]) acc[trigger] = [];
@@ -20,25 +21,25 @@ export const DialogsTab = ({ data, lang, onCodeClick }) => {
       <select 
         value={sceneId} 
         onChange={e => setSceneId(e.target.value)}
-        className="w-full bg-slate-800 p-3 rounded-xl border border-slate-700 text-white outline-none focus:border-amber-500 transition-all"
+        className="w-full bg-white p-3 rounded-xl border border-slate-300 text-slate-900 outline-none focus:ring-2 focus:ring-amber-500 transition-all appearance-none"
       >
         <option value="">Оберіть сцену...</option>
         {scenes.map(s => <option key={s.Id} value={s.Id}>{s[lang]}</option>)}
       </select>
 
       {Object.entries(groups).map(([trigger, lines]) => (
-        <div key={trigger} className={trigger !== 'base' ? "mt-6 border-l-2 border-dashed border-amber-900/50 pl-4" : ""}>
+        <div key={trigger} className={trigger !== 'base' ? "mt-6 border-l-4 border-amber-200 pl-4 bg-amber-50/30 py-2 rounded-r-lg" : ""}>
           {trigger !== 'base' && (
-            <div className="text-[10px] font-black text-amber-600 uppercase mb-2 tracking-widest">
-              Тригер: {trigger}
+            <div className="text-[10px] font-black text-amber-700 uppercase mb-2 tracking-widest px-2">
+              Якщо спрацював тригер: {trigger}
             </div>
           )}
           {lines.map((l, i) => (
             <div key={i} className="mb-4 animate-in fade-in slide-in-from-left-2 duration-300">
-              <div className="text-[10px] font-black text-blue-400 uppercase tracking-tighter ml-1">
+              <div className="text-[10px] font-black text-blue-700 uppercase tracking-tighter ml-2 mb-1">
                 {l.Person}
               </div>
-              <div className="bg-slate-900/50 p-3 rounded-2xl rounded-tl-none border border-slate-800/50 text-slate-200 shadow-sm">
+              <div className="bg-white p-4 rounded-2xl rounded-tl-none border border-slate-200 text-slate-800 shadow-sm leading-relaxed">
                 <TextFormatter text={l[lang]} onCodeClick={onCodeClick} />
               </div>
             </div>

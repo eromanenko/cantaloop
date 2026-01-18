@@ -4,18 +4,19 @@
 
 body {
   margin: 0;
-  background-color: #020617; /* slate-950 */
-  -webkit-tap-highlight-color: transparent; /* прибирає синій відблиск при натисканні на мобільному */
+  /* Light paper-like background */
+  background-color: #f8fafc; 
+  color: #0f172a;
+  -webkit-tap-highlight-color: transparent;
 }
 
-/* Кастомний скроллбар у стилі гри */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0f172a;
+  background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #475569;
+  background: #cbd5e1;
   border-radius: 10px;
 }
