@@ -25,7 +25,7 @@ export default function App() {
         setData(freshData);
         localStorage.setItem('cantaloop_full_data', JSON.stringify(freshData));
       } catch (err) {
-        console.error("Data update failed:", err);
+        console.error("Data fetch failed:", err);
       } finally {
         setLoading(false);
       }
@@ -49,10 +49,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans pb-10">
-      {/* Fixed header with light theme styles */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div className="flex items-center justify-between p-3 max-w-xl mx-auto">
-          <nav className="flex bg-slate-100 rounded-xl p-1 shadow-inner">
+          <nav className="flex bg-slate-100 rounded-xl p-1">
             {['Dialogs', 'Codes', 'Hints'].map(t => (
               <button 
                 key={t} 

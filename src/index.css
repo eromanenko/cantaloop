@@ -4,10 +4,47 @@
 
 body {
   margin: 0;
-  /* Light paper-like background */
   background-color: #f8fafc; 
   color: #0f172a;
   -webkit-tap-highlight-color: transparent;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Base chat bubble styles */
+.chat-bubble {
+  position: relative;
+  max-width: 85%;
+  padding: 0.75rem 1rem;
+  border-radius: 1.25rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Hook's messages style (right) */
+.bubble-hook {
+  background-color: #fef3c7; /* amber-100 */
+  border-bottom-right-radius: 0.25rem;
+  border: 1px solid #fde68a;
+}
+
+/* Other characters style (left) */
+.bubble-other {
+  background-color: #ffffff;
+  border-bottom-left-radius: 0.25rem;
+  border: 1px solid #e2e8f0;
+}
+
+/* Centered narrative/action text style */
+.narrative-text {
+  text-align: center;
+  width: 100%;
+  color: #64748b; /* slate-500 */
+  font-size: 0.85rem;
+  font-style: italic;
+  margin: 1.5rem 0;
+  padding: 0 1.5rem;
+  line-height: 1.4;
 }
 
 ::-webkit-scrollbar {
