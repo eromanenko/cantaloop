@@ -11,12 +11,17 @@ body {
   overflow-x: hidden;
 }
 
-/* Sidebar transition */
-.sidebar-enter { transform: translateX(100%); }
-.sidebar-enter-active { transform: translateX(0); transition: transform 300ms ease-in-out; }
-.sidebar-exit { transform: translateX(0); }
-.sidebar-exit-active { transform: translateX(100%); transition: transform 300ms ease-in-out; }
+/* Smooth transition for the loading progress bar */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
 
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Custom bubble styles from before */
 .chat-bubble {
   position: relative;
   max-width: 85%;
@@ -27,17 +32,8 @@ body {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.bubble-hook {
-  background-color: #fef3c7;
-  border-bottom-right-radius: 0.25rem;
-  border: 1px solid #fde68a;
-}
-
-.bubble-other {
-  background-color: #ffffff;
-  border-bottom-left-radius: 0.25rem;
-  border: 1px solid #e2e8f0;
-}
+.bubble-hook { background-color: #fef3c7; border: 1px solid #fde68a; border-bottom-right-radius: 0.25rem; }
+.bubble-other { background-color: #ffffff; border: 1px solid #e2e8f0; border-bottom-left-radius: 0.25rem; }
 
 .narrative-text {
   text-align: center;
@@ -49,7 +45,3 @@ body {
   padding: 0 1.5rem;
   line-height: 1.4;
 }
-
-/* Hide scrollbar for tabs */
-.no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

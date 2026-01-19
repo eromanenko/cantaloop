@@ -1,32 +1,57 @@
 import Papa from "papaparse";
 
+/* Your specific Sheet ID from the provided link */
 const SHEET_ID =
   "2PACX-1vSloJQIN_5enhGpuOnsTZ_kjKv3HVdtWS97BHtT58DWBs-ZFYuerKMcHxjujUSp7HDG0yaGuz--RmNw";
+
+/* Accurate GIDs for each tab */
 const GIDS = {
-  dictionary: "709066844", //https://docs.google.com/spreadsheets/d/e/2PACX-1vSloJQIN_5enhGpuOnsTZ_kjKv3HVdtWS97BHtT58DWBs-ZFYuerKMcHxjujUSp7HDG0yaGuz--RmNw/pub?gid=709066844&single=true&output=csv
-  b1dialogs: "29044586", //https://docs.google.com/spreadsheets/d/e/2PACX-1vSloJQIN_5enhGpuOnsTZ_kjKv3HVdtWS97BHtT58DWBs-ZFYuerKMcHxjujUSp7HDG0yaGuz--RmNw/pub?gid=29044586&single=true&output=csv
-  uk: "683593084", //https://docs.google.com/spreadsheets/d/e/2PACX-1vSloJQIN_5enhGpuOnsTZ_kjKv3HVdtWS97BHtT58DWBs-ZFYuerKMcHxjujUSp7HDG0yaGuz--RmNw/pub?gid=683593084&single=true&output=csv
-  ru: "119537139", //https://docs.google.com/spreadsheets/d/e/2PACX-1vSloJQIN_5enhGpuOnsTZ_kjKv3HVdtWS97BHtT58DWBs-ZFYuerKMcHxjujUSp7HDG0yaGuz--RmNw/pub?gid=119537139&single=true&output=csv
-  en: "0", //https://docs.google.com/spreadsheets/d/e/2PACX-1vSloJQIN_5enhGpuOnsTZ_kjKv3HVdtWS97BHtT58DWBs-ZFYuerKMcHxjujUSp7HDG0yaGuz--RmNw/pub?gid=0&single=true&output=csv
-  hen: "2085477207", //https://docs.google.com/spreadsheets/d/e/2PACX-1vSloJQIN_5enhGpuOnsTZ_kjKv3HVdtWS97BHtT58DWBs-ZFYuerKMcHxjujUSp7HDG0yaGuz--RmNw/pub?gid=2085477207&single=true&output=csv
-  huk: "1207977765", //https://docs.google.com/spreadsheets/d/e/2PACX-1vSloJQIN_5enhGpuOnsTZ_kjKv3HVdtWS97BHtT58DWBs-ZFYuerKMcHxjujUSp7HDG0yaGuz--RmNw/pub?gid=1207977765&single=true&output=csv
-  hru: "310253063", //https://docs.google.com/spreadsheets/d/e/2PACX-1vSloJQIN_5enhGpuOnsTZ_kjKv3HVdtWS97BHtT58DWBs-ZFYuerKMcHxjujUSp7HDG0yaGuz--RmNw/pub?gid=310253063&single=true&output=csv
+  dictionary: "709066844",
+  b1dialogs: "29044586",
+  uk: "683593084",
+  ru: "119537139",
+  en: "0",
+  hen: "2085477207",
+  huk: "1207977765",
+  hru: "310253063",
 };
 
-export const fetchAllGameData = async () => {
+/**
+ * Fetches all game data sequentially to update progress bar accurately.
+ * @param {Function} onProgress - Callback function that receives percentage (0-100).
+ */
+export const fetchAllGameData = async (onProgress) => {
+  const gidsEntries = Object.entries(GIDS);
+  const totalFiles = gidsEntries.length;
+  let loadedFiles = 0;
+
   const fetchSheet = async (gid) => {
-    const url = `https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/pub?gid=${gid}&output=csv`;
-    const res = await fetch(url);
-    const text = await res.text();
-    return new Promise((resolve) => {
-      Papa.parse(text, {
-        header: true,
-        skipEmptyLines: true,
-        complete: (results) => resolve(results.data),
+    /* Using the /d/e/ format for published Google Sheets as you discovered */
+    const url = `https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/pub?gid=${gid}&single=true&output=csv`;
+
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`Failed to fetch GID: ${gid}`);
+      const text = await res.text();
+
+      // Update loading progress state
+      loadedFiles++;
+      if (onProgress) onProgress(Math.round((loadedFiles / totalFiles) * 100));
+
+      return new Promise((resolve) => {
+        Papa.parse(text, {
+          header: true,
+          skipEmptyLines: true,
+          complete: (results) => resolve(results.data),
+        });
       });
-    });
+    } catch (error) {
+      console.error("Fetch error:", error);
+      throw error;
+    }
   };
 
+  /* Loading all sheets. We do it in order to maintain progress bar logic */
   const data = {
     dict: await fetchSheet(GIDS.dictionary),
     dialogs: await fetchSheet(GIDS.b1dialogs),
