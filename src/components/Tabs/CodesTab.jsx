@@ -2,12 +2,11 @@ import React, { useMemo } from 'react';
 import { usePersistentState } from '../../hooks/usePersistentState';
 import { TextFormatter } from '../Shared/TextFormatter';
 
-export const CodesTab = ({ data, lang, activeCode, setActiveCode }) => {
+export const CodesTab = ({ data, lang, activeCode, setActiveCode, activeTriggers }) => {
   const [locId, setLocId] = usePersistentState('current_loc', '1');
   const currentCodes = data.codes[lang];
   const locations = data.dict.filter(i => i.Table === 'location');
 
-  /* Sort codes alphabetically for easier navigation */
   const filtered = useMemo(() => 
     currentCodes.filter(c => c.Location === locId).sort((a, b) => a.Code.localeCompare(b.Code))
   , [locId, lang, currentCodes]);
@@ -21,7 +20,11 @@ export const CodesTab = ({ data, lang, activeCode, setActiveCode }) => {
           {activeItem.Code} {activeItem.Object ? `• ${activeItem.Object}` : ''}
         </h2>
         <div className="text-xl leading-relaxed italic text-slate-900 font-serif border-t border-amber-100 pt-4">
-          <TextFormatter text={activeItem.Text} onCodeClick={setActiveCode}/>
+          <TextFormatter 
+            text={activeItem.Text} 
+            onCodeClick={setActiveCode} 
+            activeTriggers={activeTriggers} 
+          />
         </div>
         <button 
           onClick={() => setActiveCode(null)} 
@@ -38,7 +41,7 @@ export const CodesTab = ({ data, lang, activeCode, setActiveCode }) => {
       <select 
         value={locId} 
         onChange={e => setLocId(e.target.value)} 
-        className="w-full bg-white p-3 rounded-xl border border-slate-300 text-slate-900 outline-none appearance-none"
+        className="w-full bg-white p-3 rounded-xl border border-slate-300 text-slate-900 outline-none appearance-none font-bold"
       >
         {locations.map(l => <option key={l.Id} value={l.Id}>{l[lang]}</option>)}
       </select>
