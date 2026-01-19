@@ -16,18 +16,29 @@ export const ScenesTab = ({ data, lang, t, onCodeClick, activeTriggers, inventor
 
   return (
     <div className="flex flex-col h-full space-y-4">
+      {/* Container with custom arrow icon */}
       <div className="sticky top-0 z-10 bg-slate-50/95 py-2 backdrop-blur-sm">
-        <select 
-          value={sceneId} onChange={e => setSceneId(e.target.value)}
-          className="w-full bg-white p-3 rounded-xl border border-slate-300 text-slate-900 outline-none shadow-sm font-bold appearance-none transition-all focus:border-amber-500"
-        >
-          <option value="">{t('select_scene')}</option>
-          {scenes.map(s => <option key={s.Id} value={s.Id}>{s[lang]}</option>)}
-        </select>
+        <div className="relative">
+          <select 
+            value={sceneId} 
+            onChange={e => setSceneId(e.target.value)}
+            /* appearance-none removes the default browser arrow */
+            className="w-full bg-white p-3 pr-10 rounded-xl border border-slate-300 text-slate-900 outline-none shadow-sm font-bold appearance-none transition-all focus:border-amber-500"
+          >
+            <option value="">{t('select_scene')}</option>
+            {scenes.map(s => <option key={s.Id} value={s.Id}>{s[lang]}</option>)}
+          </select>
+          {/* Custom SVG Arrow */}
+          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-slate-400">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </div>
       </div>
 
       {!sceneId ? (
-        <div className="flex flex-col items-center justify-center py-24 text-slate-400 animate-in fade-in px-10 text-center">
+        <div className="flex flex-col items-center justify-center py-24 text-slate-400 animate-in fade-in duration-700 px-10 text-center">
           <div className="w-16 h-16 mb-6 opacity-10">
             <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/></svg>
           </div>
@@ -48,7 +59,7 @@ export const ScenesTab = ({ data, lang, t, onCodeClick, activeTriggers, inventor
                       <div className="flex items-center justify-center space-x-2">
                         <div className={`h-px flex-grow ${isTriggerActive ? 'bg-amber-400' : 'bg-amber-200'}`}></div>
                         <span className={`text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full border transition-all ${
-                          isTriggerActive ? 'bg-amber-600 text-white border-amber-700' : 'bg-amber-50 text-amber-700 border-amber-200'
+                          isTriggerActive ? 'bg-amber-600 text-white border-amber-700 shadow-sm' : 'bg-amber-50 text-amber-700 border-amber-200'
                         }`}>
                           {isTriggerActive ? '✓' : ''} {t('if_trigger')} {trigger}
                         </span>

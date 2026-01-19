@@ -34,13 +34,23 @@ export const CodesTab = ({ data, lang, t, activeCode, setActiveCode, activeTrigg
 
   return (
     <div className="space-y-4">
-      <select 
-        value={locId} onChange={e => setLocId(e.target.value)} 
-        className="w-full bg-white p-3 rounded-xl border border-slate-300 text-slate-900 outline-none font-bold"
-      >
-        <option value="">{t('select_location')}</option>
-        {locations.map(l => <option key={l.Id} value={l.Id}>{l[lang]}</option>)}
-      </select>
+      <div className="relative">
+        <select 
+          value={locId} 
+          onChange={e => setLocId(e.target.value)} 
+          className="w-full bg-white p-3 pr-10 rounded-xl border border-slate-300 text-slate-900 outline-none font-bold appearance-none transition-all focus:border-amber-500 shadow-sm"
+        >
+          <option value="">{t('select_location')}</option>
+          {locations.map(l => <option key={l.Id} value={l.Id}>{l[lang]}</option>)}
+        </select>
+        {/* Same custom SVG Arrow for consistency */}
+        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-slate-400">
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+      </div>
+
       <div className="grid grid-cols-3 gap-3">
         {filtered.map(c => (
           <button 
