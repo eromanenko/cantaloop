@@ -1,67 +1,70 @@
 import React from 'react';
 
-export const TextFormatter = ({ text, onCodeClick, activeTriggers = [], inventory = [], toggleCard }) => {
+export const TextFormatter = ({ text, onCodeClick, activeTriggers = [], inventory = [], toggleCard, toggleTrigger }) => {
   if (!text) return null;
 
-  /* 1. Conditional logic [If XX: ...] */
+  /* 1. Process conditional logic [If ID: Text. Otherwise: Text] */
   const triggerLogicRegex = /\[(?:If|Якщо|Если)\s+([A-Z]\d)[:\s]+(.*?)(?:\.?\s*(?:Otherwise|Інакше|Иначе|В\s+противном\s+случае)[:\s]*)?\s*(.*?)\]/gi;
+  
   let processedText = text.replace(triggerLogicRegex, (match, triggerId, ifText, otherwiseText) => {
     return activeTriggers.includes(triggerId.toUpperCase()) ? ifText : otherwiseText;
   });
 
-  /* 2. Card logic (detection of #00 patterns) */
-  const cardNumRegex = /#(\d{2})/g;
-  const parts = processedText.split(/(\[.*?\])/g);
+  /* 2. Identify all interactive elements: 
+     - Alphanumeric codes: (a1b2)
+     - Trigger IDs: (A1)
+     - Card numbers: (#01 or №01) <-- Added support for №
+  */
+  const combinedRegex = /([a-z]\d[a-z]\d|[A-Z]\d|[#№]\d{2})/g;
+  const parts = processedText.split(combinedRegex);
 
   return (
     <span>
       {parts.map((part, i) => {
-        if (part.startsWith('[') && part.endsWith(']')) {
-          const cardMatches = [...part.matchAll(cardNumRegex)];
-          
-          if (cardMatches.length > 0) {
-            return (
-              <span key={i} className="inline-block my-1.5 p-1.5 bg-blue-50/50 border border-blue-100 rounded-xl text-[11px] font-bold text-blue-800 shadow-sm">
-                {part.split(cardNumRegex).map((subPart, j) => {
-                  const isCardNum = /^\d{2}$/.test(subPart);
-                  if (isCardNum) {
-                    const hasCard = inventory.includes(subPart);
-                    return (
-                      <button 
-                        key={j}
-                        onClick={() => toggleCard(subPart)}
-                        className={`mx-1 px-2.5 py-1 rounded-lg transition-all font-mono text-sm border shadow-sm ${
-                          hasCard 
-                            ? 'bg-blue-600 border-blue-700 text-white' 
-                            : 'bg-white border-blue-200 text-blue-600 animate-pulse'
-                        }`}
-                      >
-                        #{subPart}
-                      </button>
-                    );
-                  }
-                  return subPart;
-                })}
-              </span>
-            );
-          }
+        // Alphanumeric code (e.g., g1p0)
+        if (/^[a-z]\d[a-z]\d$/i.test(part)) {
+          return (
+            <button key={i} onClick={() => onCodeClick(part.toLowerCase())} className="text-amber-800 underline font-black px-1 hover:text-amber-600 transition-colors font-mono">
+              {part}
+            </button>
+          );
+        }
+        
+        // Trigger ID (e.g., D8, B2)
+        if (/^[A-Z]\d$/.test(part)) {
+          const isActive = activeTriggers.includes(part);
+          return (
+            <button 
+              key={i} 
+              onClick={() => toggleTrigger && toggleTrigger(part)} 
+              className={`mx-1 px-1.5 py-0.5 rounded-md border font-black transition-all ${
+                isActive ? 'bg-amber-600 border-amber-700 text-white shadow-sm' : 'bg-white border-amber-300 text-amber-700'
+              }`}
+            >
+              {part}
+            </button>
+          );
         }
 
-        /* 3. Alphanumeric codes (a1b2) */
-        const codeRegex = /([a-z]\d[a-z]\d)/gi;
-        const codeParts = part.split(codeRegex);
-
-        return codeParts.map((sub, k) => 
-          codeRegex.test(sub) ? (
+        // Card number (e.g., #21 or №21)
+        if (/^[#№]\d{2}$/.test(part)) {
+          /* Extract digits regardless of prefix used (# or №) */
+          const cardNum = part.replace(/[#№]/, '');
+          const hasCard = inventory.includes(cardNum);
+          return (
             <button 
-              key={k} 
-              onClick={() => onCodeClick(sub.toLowerCase())} 
-              className="text-amber-800 underline font-black px-1 hover:text-amber-600 transition-colors font-mono"
+              key={i} 
+              onClick={() => toggleCard && toggleCard(cardNum)} 
+              className={`mx-1 px-2 py-0.5 rounded-lg border font-mono font-bold transition-all ${
+                hasCard ? 'bg-blue-600 border-blue-700 text-white shadow-sm' : 'bg-white border-blue-300 text-blue-600 animate-pulse'
+              }`}
             >
-              {sub}
+              {part}
             </button>
-          ) : sub
-        );
+          );
+        }
+
+        return part;
       })}
     </span>
   );

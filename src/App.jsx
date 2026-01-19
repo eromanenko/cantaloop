@@ -178,9 +178,9 @@ export default function App() {
       )}
 
       <main className="max-w-xl mx-auto p-4">
-        {tab === 'Scenes' && <ScenesTab data={data} lang={lang} t={t} onCodeClick={handleLink} activeTriggers={activeTriggers} inventory={inventory} toggleCard={toggleCard} />}
-        {tab === 'Codes' && <CodesTab data={data} lang={lang} t={t} activeCode={activeCode} setActiveCode={setActiveCode} activeTriggers={activeTriggers} inventory={inventory} toggleCard={toggleCard} />}
-        {tab === 'Hints' && <HintsTab data={data} lang={lang} t={t} />}
+        {tab === 'Scenes' && <ScenesTab data={data} lang={lang} t={t} onCodeClick={handleLink} activeTriggers={activeTriggers} inventory={inventory} toggleCard={toggleCard} toggleTrigger={toggleTrigger} />}
+        {tab === 'Codes' && <CodesTab data={data} lang={lang} t={t} activeCode={activeCode} setActiveCode={setActiveCode} activeTriggers={activeTriggers} inventory={inventory} toggleCard={toggleCard} toggleTrigger={toggleTrigger} />}
+        {tab === 'Hints' && <HintsTab data={data} lang={lang} toggleTrigger={toggleTrigger} t={t} />}
         {tab === 'Triggers' && <TriggersTab activeTriggers={activeTriggers} onToggle={toggleTrigger} t={t} />}
         {tab === 'Inventory' && <InventoryTab inventory={inventory} onToggle={toggleCard} t={t} />}
       </main>

@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { usePersistentState } from '../../hooks/usePersistentState';
 import { TextFormatter } from '../Shared/TextFormatter';
 
-export const CodesTab = ({ data, lang, t, activeCode, setActiveCode, activeTriggers }) => {
+export const CodesTab = ({ data, lang, t, activeCode, setActiveCode, activeTriggers, inventory, toggleCard, toggleTrigger }) => {
   const [locId, setLocId] = usePersistentState('current_loc', '1');
   const currentCodes = data.codes[lang];
   const locations = data.dict.filter(i => i.Table === 'location');
@@ -20,7 +20,7 @@ export const CodesTab = ({ data, lang, t, activeCode, setActiveCode, activeTrigg
           {activeItem.Code} {activeItem.Object ? `• ${activeItem.Object}` : ''}
         </h2>
         <div className="text-xl leading-relaxed italic text-slate-900 font-serif border-t border-amber-100 pt-4">
-          <TextFormatter text={activeItem.Text} onCodeClick={setActiveCode} activeTriggers={activeTriggers} />
+          <TextFormatter text={activeItem.Text} onCodeClick={setActiveCode} activeTriggers={activeTriggers} inventory={inventory} toggleCard={toggleCard} toggleTrigger={toggleTrigger} />
         </div>
         <button 
           onClick={() => setActiveCode(null)} 
