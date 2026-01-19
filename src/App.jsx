@@ -1,20 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { fetchAllGameData } from './services/api';
 import { usePersistentState } from './hooks/usePersistentState';
-import { DialogsTab } from './components/Tabs/DialogsTab';
+import { ScenesTab } from './components/Tabs/ScenesTab';
 import { CodesTab } from './components/Tabs/CodesTab';
 import { HintsTab } from './components/Tabs/HintsTab';
 import { TriggersTab } from './components/Tabs/TriggersTab';
 
 export default function App() {
   const [lang, setLang] = usePersistentState('game_lang', 'UK');
-  const [tab, setTab] = usePersistentState('active_tab', 'Dialogs');
+  const [tab, setTab] = usePersistentState('active_tab', 'Scenes');
   const [activeCode, setActiveCode] = useState(null);
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
-  
-  /* State for triggered flags, persisted in localStorage */
   const [activeTriggers, setActiveTriggers] = usePersistentState('active_triggers', []);
+
+  /* Helper function for UI translations */
+  const t = (id) => {
+    if (!data) return id;
+    const item = data.dict.find(i => i.Table === 'ui' && i.Id === id);
+    return item ? item[lang] : id;
+  };
 
   useEffect(() => {
     const init = async () => {
@@ -56,21 +61,28 @@ export default function App() {
     );
   }
 
+  const tabs = [
+    { id: 'Scenes', label: t('tab_scenes') },
+    { id: 'Codes', label: t('tab_codes') },
+    { id: 'Hints', label: t('tab_hints') },
+    { id: 'Triggers', label: t('tab_triggers') }
+  ];
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans pb-10">
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div className="flex flex-col max-w-xl mx-auto">
           <div className="flex items-center justify-between p-3">
             <nav className="flex bg-slate-100 rounded-xl p-1 overflow-x-auto no-scrollbar">
-              {['Dialogs', 'Codes', 'Hints', 'Triggers'].map(t => (
+              {tabs.map(item => (
                 <button 
-                  key={t} 
-                  onClick={() => setTab(t)} 
+                  key={item.id} 
+                  onClick={() => setTab(item.id)} 
                   className={`px-3 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg transition-all whitespace-nowrap ${
-                    tab === t ? 'bg-amber-600 text-white shadow-md' : 'text-slate-500 hover:text-slate-800'
+                    tab === item.id ? 'bg-amber-600 text-white shadow-md' : 'text-slate-500 hover:text-slate-800'
                   }`}
                 >
-                  {t}
+                  {item.label}
                 </button>
               ))}
             </nav>
@@ -93,28 +105,23 @@ export default function App() {
       </header>
 
       <main className="max-w-xl mx-auto p-4 animate-in fade-in duration-500">
-        {tab === 'Dialogs' && (
-          <DialogsTab 
-            data={data} 
-            lang={lang} 
-            onCodeClick={handleLink} 
-            activeTriggers={activeTriggers} 
+        {tab === 'Scenes' && (
+          <ScenesTab 
+            data={data} lang={lang} t={t}
+            onCodeClick={handleLink} activeTriggers={activeTriggers} 
           />
         )}
         {tab === 'Codes' && (
           <CodesTab 
-            data={data} 
-            lang={lang} 
-            activeCode={activeCode} 
-            setActiveCode={setActiveCode}
+            data={data} lang={lang} t={t}
+            activeCode={activeCode} setActiveCode={setActiveCode}
             activeTriggers={activeTriggers}
           />
         )}
-        {tab === 'Hints' && <HintsTab data={data} lang={lang} />}
+        {tab === 'Hints' && <HintsTab data={data} lang={lang} t={t} />}
         {tab === 'Triggers' && (
           <TriggersTab 
-            activeTriggers={activeTriggers} 
-            onToggle={toggleTrigger} 
+            activeTriggers={activeTriggers} onToggle={toggleTrigger} t={t}
           />
         )}
       </main>
