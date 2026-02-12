@@ -1,9 +1,25 @@
-const CACHE_NAME = "cantaloop-v1";
+const VERSION = 1.1;
+const CACHE_NAME = `cantaloop-v${VERSION}`;
 const URLS_TO_CACHE = [
   "/",
   "/index.html",
   "/manifest.json",
-  // Сюди SW автоматично додасть JS та CSS після збірки
+  "./avatars/alice.png",
+  "./avatars/barkeeper.png",
+  "./avatars/bouncer.png",
+  "./avatars/fly.png",
+  "./avatars/girl.png",
+  "./avatars/guard.png",
+  "./avatars/hook.png",
+  "./avatars/mike.png",
+  "./avatars/secretary.png",
+  "./avatars/woman.png",
+  "./icons/apple-touch-icon.png",
+  "./icons/favicon-96x96.png",
+  "./icons/favicon.ico",
+  "./icons/favicon.svg",
+  "./icons/favicon-192x192.png",
+  "./icons/favicon-512x512.png",
 ];
 
 self.addEventListener("install", (event) => {
@@ -15,7 +31,6 @@ self.addEventListener("install", (event) => {
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
-      // Повертаємо файл з кешу, якщо він там є, інакше йдемо в мережу
       return response || fetch(event.request);
     }),
   );
