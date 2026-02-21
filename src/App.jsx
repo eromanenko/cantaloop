@@ -183,7 +183,7 @@ export default function App() {
                     <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                     </svg>
-                    Install app
+                    {t('install_app')}
                   </button>
                 )}
                 <button
@@ -199,7 +199,7 @@ export default function App() {
             </div>
 
             <div className="p-6 text-[10px] text-slate-300 text-center uppercase font-black tracking-widest">
-              Cantaloop OS v1.0.7
+              Cantaloop OS v1.0.8
             </div>
           </aside>
         </div>
