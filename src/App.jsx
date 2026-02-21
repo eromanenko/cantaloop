@@ -15,6 +15,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [loadProgress, setLoadProgress] = useState(0); // Progress percentage
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
 
   const [activeTriggers, setActiveTriggers] = usePersistentState('active_triggers', []);
   const [inventory, setInventory] = usePersistentState('game_inventory', []);
@@ -23,6 +24,24 @@ export default function App() {
     if (!data) return id;
     const item = data.dict.find(i => i.Table === 'ui' && i.Id === id);
     return item ? item[lang] : id;
+  };
+
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (e) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    };
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    return () => window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+  }, []);
+
+  const handleInstallApp = async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome === 'accepted') {
+      setDeferredPrompt(null);
+    }
   };
 
   useEffect(() => {
@@ -156,6 +175,17 @@ export default function App() {
 
               {/* Reset Section */}
               <div className="pt-4 border-t border-slate-100">
+                {deferredPrompt && (
+                  <button
+                    onClick={handleInstallApp}
+                    className="w-full p-4 mb-3 rounded-xl flex items-center justify-center gap-3 text-white font-bold bg-amber-500 hover:bg-amber-600 transition-colors shadow-md"
+                  >
+                    <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    Встановити застосунок
+                  </button>
+                )}
                 <button
                   onClick={handleReset}
                   className="w-full p-4 rounded-xl flex items-center gap-3 text-red-500 font-bold bg-red-50 hover:bg-red-100 transition-colors"
