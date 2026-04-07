@@ -45,23 +45,9 @@ export default function App() {
   };
 
   useEffect(() => {
-    const init = async () => {
-      const cached = localStorage.getItem('cantaloop_full_data');
-      if (cached) {
-        setData(JSON.parse(cached));
-        setLoading(false);
-      }
-      try {
-        const freshData = await fetchAllGameData((p) => setLoadProgress(p));
-        setData(freshData);
-        localStorage.setItem('cantaloop_full_data', JSON.stringify(freshData));
-      } catch (err) {
-        console.error("Update failed:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    init();
+    const gameData = fetchAllGameData((p) => setLoadProgress(p));
+    setData(gameData);
+    setLoading(false);
   }, []);
 
   const handleLink = (code) => { setActiveCode(code); setTab('Codes'); };
@@ -199,7 +185,7 @@ export default function App() {
             </div>
 
             <div className="p-6 text-[10px] text-slate-300 text-center uppercase font-black tracking-widest">
-              Cantaloop OS v1.0.8
+              Cantaloop OS v1.1.0
             </div>
           </aside>
         </div>

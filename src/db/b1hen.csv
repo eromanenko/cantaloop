@@ -1,0 +1,80 @@
+Number,Problem,Tip 1,Tip 2,Solution
+100,I don't know how to leave the lighthouse.,"Look around the lighthouse, especially downstairs.",Check out the mailbox outside the lighthouse.,"In location 02, combine the mailbox with the magnifying glass to get a postcard and trigger h2."
+101,I have no clue how to get to the bar.,"Look around the lighthouse, especially downstairs.",Check out the poster outside the lighthouse.,"In location 02, combine the poster with the magnifying glass to trigger d3."
+102,How do I get past the bouncer (location 12)?,The bouncer is a collector. What's a common thing people collect?,Have a very close look at literally everything you got so far.,The stamp on the reverse of the postcard has a hidden code: rotate the card by 180° and combine it with the bouncer to trigger e9.
+103,I feel like I'm missing something.,Check out all the places you can access.,Check out the church tower.,"In location 20, pick up the magnet on the right to trigger c6."
+104,How do I get the key off the bar shelf (location 13)?,You won't get past the barkeeper. Take a look at the evacuation plan.,Go to the hallway and let science do its thing.,"In location 14, combine the bar door with the magnet to get a rusty key and trigger f7."
+105,How do I get into the Blue Mamba bathroom?,How does one get inside a locked room anyway?,Use the key.,"In location 14, combine the WC door with the rusty key to trigger e4."
+106,I feel like I'm missing something.,Check out all the places you can access.,Check out the church.,"In location 19, pick up a coin from the candle vendor to trigger f5."
+107,What am I supposed to do in the Blue Mamba bathroom?,"Better safe than sorry, amirite?",Check out the vending machine.,Combine the vending machine with the coin to get a pack of condoms and trigger c9.
+108,What am I supposed to do in the Blue Mamba bathroom?,You want to get rid of the barkeeper by keeping him busy.,Clog up the toilet.,Combine the toilet with the condoms to trigger h1.
+109,I feel like I'm missing something.,Check out all the places you can access.,Check out the Blue Mamba bathroom.,"In location 15, pick up the lead pipe near the urinals to trigger g7."
+110,I need running water in the Blue Mamba bathroom.,There's a pipe coming from the toilet. Follow it.,Check out the valve in front of the bar.,"In location 12, combine the valve with the lead pipe to trigger g9 and thus c4."
+111,I made a mess in the Blue Mamba bathroom. Now what?,"This might serve as an excellent distraction, don't you think?",Go tell the barkeeper.,Go to scene A and read the new dialog option (for c4) to trigger b1.
+112,Where do I get a light source for the basement?,Sometimes we get our best ideas when we focus on something else.,"There are two main objectives, you know.",You need to get ahead in the BREAKING FLY OUT story arc first.
+113,Where do I get a light source for the basement?,Check out all the places you can access.,Check out the prison guard's room.,"In location 08, pick up the matches from the floor to trigger g6."
+114,How do I get the matches out of the prison?,Not through the front door-that's for sure.,"You got stuff in, didn't you?","In location 08, combine the window with the matches to trigger f2."
+115,I threw the matches out of the window. Now what?,Where did you throw them?,Check out the trash can behind the prison.,"In location 04, combine the trash can with the magnifying glass to retrieve the matches and trigger k9."
+116,I got the matches out but they're wet!,You need to find a heat source.,Check out your base of operations.,"In location 01, combine the lamp with the matches to trigger f1 and thus k2."
+117,How can I light up the dark corner in the basement?,"You have a light source, don't you?",Light a match or two.,Combine the dark corner with the matches to trigger j6.
+118,What am I supposed to do with the fuse box?,This is not a puzzle.,"Seriously, just flip the switch.",Combine the fuse box with the magnifying glass to trigger b2.
+119,I had a chat with Alice. Now what?,Don't you have other things to do?,"There is another main objective, you know.",You're done with this story arc. Now finish BREAKING FLY OUT.
+200,I don't know how to leave the lighthouse.,"Look around the lighthouse, especially downstairs.",Check out the mailbox outside the lighthouse.,"In location 02, combine the mailbox with the magnifying glass to get a postcard and trigger h2."
+201,I need to get inside the prison.,Have you tried walking through the front door?,Talk to the guard.,"In location 03, combine the guard with the magnifying glass to trigger e7."
+202,"OK, I'm in the prison hallway. Now what?",What did you come here for?,Go to the visiting area and talk to Fly.,Go to scene C to trigger b4.
+203,I don't know what to do in Fly's bathroom.,Look around.,Check out the beauty products.,"In location 18, check out the beauty products to trigger a8."
+204,Stuck in location 18?,Look around.,Check out the shelves near the door.,Pick up the dental floss between the beauty products.
+205,I can't find the transmitter in Fly's bathroom.,Look around.,Check out the mirror.,Combine the mirror with the magnifying glass to get the transmitter and trigger c3.
+206,How am I supposed to fix the switch?,Find out what's wrong with it.,Find a way to prevent the switch from flipping back.,Combine the switch with the dental floss to trigger c2.
+207,I can't leave Fly's bathroom.,Look around. You must have missed something.,Those clothes might come in handy.,Grab the clothes hanging on the shower curtain to trigger a6.
+208,I think I'm done with Fly's bathroom.,You should ask the lady.,Check out the door.,Cross off k6. Then go to scene F and read the new dialog option (for k6).
+209,I don't know what to do next.,You told Fly you'd dress up as a guard.,Figure out what the prison guards wear.,"In location 03, combine the poster with the magnifying glass to trigger j9."
+210,I feel like I'm missing something.,Check out all the places you can access.,Check out your base of operations.,"In location 01, pick up the tea bags to trigger d8."
+211,I need help finding a uniform.,You should dye the clothes you got from Fly's bathroom.,Look around for a pool of water to dye the clothes.,"In location 19, combine the holy water basin with the tea bags to trigger h3."
+212,I made some tea in the church. Now what?,What color is the water now?,It seems to have the same color as the guard's shirt.,Combine the holy water basin with the clothes to trigger d4.
+213,I dyed the shirt yellow. Now what?,Have you been to the bar yet?,Check out the poster at the lighthouse.,"In location 02, combine the poster with the magnifying glass to trigger d3."
+214,I dyed the shirt yellow. Now what?,Have you been to the bar yet?,Talk to the bouncer.,Go to scene J to get a cocktail and trigger e2.
+215,I dyed the shirt yellow. Now what?,You still need green pants.,How does one turn yellow green?,"In location 19, combine the holy water basin with the cocktail to trigger h4."
+216,I dyed the shirt yellow. Now what?,What color is the holy water again?,It seems to have the same color as the guard's pants.,"In location 19, combine the holy water basin with the clothes to trigger d5."
+217,I feel like I'm missing something.,Look around all the places you can access.,One man's trash is another man's treasure.,"In location 04, combine the trash can with the magnifying glass to get cereal and trigger e1."
+218,I'm missing a badge for my fake uniform.,Look inside the box of cereal.,Have a good look at your items.,"The box says ""toy 1nside!"" Read t0y1 in the inventory to get a toy badge and trigger g5."
+219,Close to faking a uniform. Missing something?,Try putting it all together.,Attach the toy badge to the dyed clothes.,Combine clothes with toy badge to form a fake uniform and trigger d6 and thus k7.
+220,I feel like I'm missing something.,Look around all the places you can access.,Check out the church tower.,"In location 20, pick up the magnet on the right to trigger c6."
+221,I found something below a container (location 04).,It might be made of metal.,It might be magnetic even.,Combine the container with the magnet to get a coat hanger and trigger f3.
+222,I don't know what to do with this coat hanger.,What is it used for anyway?,Try hanging some clothes on it.,Combine the coat hanger with the fake uniform to trigger e6.
+223,I feel like I'm missing something.,Look around all the places you can access.,Check out the church tower.,"In location 20, pull out the brick from the wall to trigger a7."
+224,I don't know what to do with this brick.,MacGyver it up!,This brick comes with no strings attached.,Combine the dental floss with the brick to trigger a9.
+225,Can't find a way to get stuff into the prison.,You should really try from a different angle.,I hear towers lend themselves for throwing.,"In location 20, combine the view with the brick to trigger k5."
+226,I got a zip line up and running.,It's not supposed to hold your weight.,You can hang stuff on it and let it slide.,Combine the zip line with the fake uniform to trigger b9.
+227,I don't know how to get the prison blueprints.,Sometimes focus on something else for a while.,"There are two main objectives, you know.",You need to get ahead in THE WOMAN IN RED story arc first.
+228,I feel like I'm missing something.,Look around all the places you can access.,Check out the bar.,"In location 13, pick up the bottle from the table to trigger c8."
+229,I don't know what to do with this bottle.,What are bottles used for?,Fill the bottle with water.,"In location 19, combine the holy water basin with the bottle to trigger d9."
+230,I need to get rid of the secretary (location 17).,She won't leave of her own volition.,Drug her.,Combine the secretary with the cocktail to trigger j3.
+231,I need a key card for the archive.,You could get one from the PO box.,Key cards float.,Combine the PO box with the bottle to get a key card and trigger f9.
+232,How to get blueprints?,They should be in the national archive.,You have a key card... use it!,"In location 17, combine the key card reader with the keycard to trigger k8."
+233,Where are those $*#%! blueprints?!,"Inside the archive, obviously.",You've opened the door; now get inside!,"In location 17, check out the open door to get blueprints and trigger f6."
+234,Fly left me a message in the bathroom.,It's in the prison bathroom (loc 07).,His message can't be on paper.,"In location 07, steam up the mirror by turning faucets to hot to trigger e5."
+235,What's that on the mirror in location 07?,This is not an upside-down four.,You need a keypad code. Use Fly's image nodes.,Nodes correspond to keypad positions (1067 or 7601). Try 1067 in location 05 to trigger b5.
+236,I know the elevator code. Now what?,How about you go upstairs and look around?,There's a uniform outside the window.,"In location 08, combine window with magnifying glass to retrieve uniform and trigger d7."
+237,I got the uniform inside. Now what?,"What is it, again, that you do with a uniform?",Find a quiet place where you can put it on.,"In location 07, combine bathroom stall with fake uniform to trigger a2."
+238,I can roam freely now but what next?,Look around the new rooms you unlocked.,Follow the unicorn.,"In location 10, combine the snow globe with the magnifying glass to trigger i8."
+239,I feel like I'm missing something.,Look around the prison.,Check out the guard's room.,"In location 08, combine the cabinet with magnifying glass to get a screwdriver and trigger g2."
+240,I got this screwdriver. Now what?,Notice any screws around?,Check out the door in the mess hall.,"In location 09, combine the door with screwdriver to unscrew the grill and trigger k4."
+241,Screwdriver use #2?,Look around the prison.,Check out what else you could use it on.,"In location 08, combine the pipe with the screwdriver to unscrew it and trigger g1."
+242,I unscrewed the door grill. Now what?,Where does this door lead to anyway?,You need some sort of ramp to slide the globe down.,"In location 09, combine the hole in the door with the pipe to trigger b8."
+243,I feel like I'm missing something.,Look around the prison.,Check out the mess hall.,"In location 09, pick up the broom standing against the back wall to trigger g4."
+244,How do I get the globe into the pipe?,Ever played dominoes?,Nudge the books with a long stick.,"In location 10, combine books with broom to get the snow globe and trigger d1."
+245,What am I supposed to use this globe for?,There's a unicorn inside!,Little girls like unicorns. Met any lately?,"In location 06, combine the little girl with the snow globe to trigger b7."
+246,Safe code in director's office?,Passwords have some emotional meaning.,The code must be the little girl's birthday.,"Girl is 9. Birthday was June 7. Born June 7, 2011. Try 6711 in location 06 to trigger a4."
+247,Found a key in a safe. What's it for?,Found anything inside the prison that's locked?,Check out the door on the left in the hallway.,"In location 05, combine the door on the left with the key to trigger g8."
+248,Stuck in prison storage room.,Take a close look at everything you got so far.,Have a look at the prison blueprints.,Combine the blueprints with the magnifying glass to trigger h5.
+249,Blueprints instruction?,What do the blueprints tell you?,You need to open that air vent.,Combine the air vent with the broom to trigger k3.
+250,Need cellphone inside the prison.,Sometimes focus on something else.,"There are two main objectives, you know.",You need to get ahead in THE WOMAN IN RED story arc first.
+251,Need cellphone inside. Air mail?,"Have you considered ""air mail"" yet?",Make a balloon.,"In location 16, combine helium bottles with condoms to get a balloon and trigger a5."
+252,Cellphone inside. Balloon?,"Have you considered ""air mail"" yet?",Attach the balloon to your cellphone.,Combine cellphone with balloon to create a floating cell and trigger f8.
+253,Floating cell is ready. Now what?,Listen to Elsa and let it go.,Place it at the unguarded window behind the prison.,"In location 04, combine the window with the floating cell to trigger b3."
+254,I need my cellphone back.,Where did you put it?,Check out the prison guard's room.,"In location 08, combine the window with magnifying glass to retrieve the cell and trigger c7."
+255,Missing something? Transmitter?,Where did the transmitter go?,Check inside your pockets.,Combine fake uniform with magnifying glass to retrieve transmitter and trigger a3.
+256,Transmitter use inside?,Remember what Fly told you.,Plug it into the warden's computer.,"In location 06, combine the computer with the transmitter to trigger b6."
+257,How do I get my cellphone to Fly?,Listen to Elsa and let it go.,Use the open air vent in the storage room.,"In location 11, combine open air vent with floating cell to trigger c1."
+258,Fly is out. Now what?,Don't you have other things to do?,"There is another main objective, you know.",You're done with this story arc. Now finish THE WOMAN IN RED.

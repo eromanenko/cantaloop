@@ -1,0 +1,609 @@
+Location,Code,Object,Text
+1,bob3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+1,i3x3,Lamp + Matches,I don't have the matches on me; I've thrown them out of a window and never retrieved them.
+1,m8g2,Cantaloop Island + Cell Phone,The man in the store said I can take photos with this thing. Why would I want a photo of myself and a cell phone? I don't understand the world anymore.
+1,d6b3,,"Hey, nobody told you to read this! Always make sure you only read what you are allowed to. Start with inspecting the objects on the right."
+1,i4c0,Lamp + Matches,"Yeah, I guess I could use this to dry them. There, now they should be good to go. [Cross off F1 and K2.]"
+1,h5p4,Cantaloop Island + Tea Bags,Read i2p1.
+1,i4c7,Lamp + Matches,But the matches are already dry.
+1,i2p1,,"Oh, I should warn you: In the future, if you combine two objects that don't go together, I might call you out on it. Not now, I mean, because this is the first location but, in the future, if you try to splash water on a wall socket or something equally brilliant I'll let you know my ""opinion"" on that. So just do us all a favor and make smart decisions, OK? Thank you."
+1,i5x9,Lamp + Tea Bags,They're already dried.
+1,i3b4,Lamp + Cell Phone,Read i2p1.
+1,i3b6,Lamp + Clothes,[If D4 or D5: Read i3k4. Otherwise:] They're dry.
+1,i3k4,Lamp + Clothes,"Good idea, but they already dried on the way here."
+1,i3p5,Inspect Lamp,I leave it on most of the time. It's so hot that I use it to dry my shirts.
+1,i3t7,Lamp + Matches,[If K2: Read i4c7. If K9: Read i4c0. If F2: Read i3x3. Otherwise:] I guess this lamp is hot enough to dry the matches. Thing is ... they're still inside the prison.
+1,m1e5,Tea Bags,"These were here when I arrived. And they're waaay past their expiration date. Dude, I didn't even know they MADE tea back then. But I'll take some, sure. [Cross off D8. Take card #21.]"
+1,m1i0,,"(You skipped the tutorial, didn't you? When you combine two items or use the Magnifying Glass on an item, you must read the corresponding code in the inventory, not the location you are currently in. So, what are you waiting for? Open your inventory and read m1i0 there.]"
+1,m1r2,Lighthouse,"This'll be my base of operations for now. It's seen better times, true, but hey-at least the calendar's up to date!"
+1,m8i0,Inspect Cantaloop Island,"I can see White Mansion in the distance. Not much longer now. But first, I'll have to find a crew."
+1,x5m8,,That's one half of my crew taken care of. Now I just gotta figure out a way to get Alice off that stage.
+1,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+2,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+2,k4m1,Poster + Cell Phone,"Let's see when it's open. [You dial the number on the poster; a fraction of a second later, a computer voice says: ""The number you dialed is not a working number.""] Rats, whatever. It's a bar; it's probably open in the evening hours."
+2,c1h8,Mailbox + Magnet,Confirmed: it's magnetic.
+2,c1r9,Mailbox + Brick,"Nah, not feeling particularly destructive today."
+2,d4b1,Van,"Yeah, the old van. We've been through a lot together. Germany, mostly."
+2,d6i0,Inspect Mailbox,"Hey look at that, a postcard! Jeez, it's so old it almost falls apart. Gotta be careful with that one. [Cross off H2. Take the postcard. From now on, you can use it to travel to any location (or scene) you see written there. Whenever you want to leave the location you're currently at, just choose a different location from there. You can do this at any time. Some locations are locked-they require certain triggers be crossed off. This usually happens when Hook hears about a new location.) Alright, where to first?"
+2,k3i0,Inspect Door,"Looks like a door from a bathroom stall. A graffiti tag says ""Hey, put that back in your pants!"""
+2,k4b4,Poster + Cell Phone,[If D3: Read k4m1. Otherwise:] I should probably look at this poster first before I try something funny.
+2,k4p5,Inspect Poster,"It's a poster for the Blue Mamba, a jazz club here in town. ""Alice and the Cornerstones"" are playing there. A jazz singer, huh? She might be the ideal candidate for a Woman in Red. [Cross off D3.]"
+2,z6h3,Trash,"Searching through trash? Of course, why wouldn't I? Not like the only difference between me and a hobo is that I actually keep the really useless stuff."
+2,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+3,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+3,z8b4,Metal Detector + Cell Phone,"Yeah, that's not gonna work. I have to leave my backpack at the door and anything I carry on my body is getting picked up by this thing."
+3,z8i5,Metal Detector + Postcard,I don't think they'll mind a piece of cardboard.
+3,z8s0,Metal Detector + Screwdriver,I'm pretty sure it's made of metal. Got to get that in some other way.
+3,r6e5,Metal Detector + Transmitter,I'm pretty sure it's made of metal. Got to get that in some other way.
+3,r6s2,Inspect Metal Detector,"It's one of those fancy walkthrough-gate-thingies. If I carry anything metal through there, the guard's gonna know."
+3,v9e3,Guard + Toy Badge,"Yeah, let's wave it around before his face... He sure as heck is gonna fall for it. Especially from up close, doofus."
+3,v9i0,Inspect Guard,He looks like he's about to fall asleep. But I bet he'd wake up instantly if that detector starts making noises.
+3,v9p5,Guard + Postcard,"""Look at this postcard I got from a fan!"" - ""Move on, buddy."""
+3,v9s8,Guard + Screwdriver,"I'm a crook, not a murderer."
+3,v9t2,Guard + Condoms,"(sigh) Sorry to break it to you, but this isn't Leisure Suit Larry, mate."
+3,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+4,bob3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+4,h4d4,Trash Can + Coin,"Seems legit. [Return card #06 to the deck. If E8: Read h4m7. If E3: Read h4k3. Otherwise:) On second thought, maybe this wasn't the wisest of ideas... but I'm sure as heck not gonna dig through that trash to retrieve my coin. [Cross off E3.]"
+4,h4k3,Trash Can + Coin,Looks like this coin's lost forever-not gonna dig for it in there. [Cross off E8.]
+4,h4m7,Trash Can + Coin,[Go to location 19 and read v9z9 there.]
+4,h4p5,Inspect Trash Can,"If [F2: Read h5h4. Otherwise:] Hey, that looks useful. [Cross off E1. Take card #23.]"
+4,h5h4,Inspect Trash Can,"[If F1: Read h6d2. Otherwise:] Ah, there they are. [Cross off K9. Take card #26.]"
+4,h6d2,Inspect Trash Can,"Ah, there they are. [Cross off K2 and K9. Take card #26.]"
+4,h7g4,Trash Can + Box of Cereal,"I actually quite enjoy carrying maggot infested trash around with me, so I'll keep it. But thanks for being considerate."
+4,h7j8,Trash Can + Magnet,"Yeah, it's magnetic. Happy?"
+4,h8z3,Fake Uniform,"I need to get up there somehow, and fast."
+4,i7c7,Wall + Blueprints,Behind this wall should be the dog kennel. Probably a good idea to avoid the dogs.
+4,i7h8,Wall + Magnet,Nothing. I thought maybe I can catch a dog by its collar.
+4,i7r9,Wall + Brick,"If [A9: Read j2x4. Otherwise:] Sure, let's put it back with its kind. There, there, Bricksy, you're home now. I'll miss you. Literally, even. [Return card #05 to the deck.]"
+4,j2x4,Wall + Brick,"Clever, but the barbed wire would just rip the dental floss to pieces."
+4,j5h8,Container + Magnet,Thought so! That shiny thing turned out to be magnetic. [Cross off F3. Take card #01.]
+4,m2b3,Floating Cell,"Alright, let's get to that as quickly as possible before anyone notices."
+4,r0k9,,"[Put card #44 into this location.] Alright, we're halfway there. Now what?"
+4,t7e5,Window + Transmitter,It would just make a lot of noise.
+4,t7h7,Window + Blueprints,"According to the blueprints, this is the window to the guard's break room. It's also the only window that can't be seen from the guard towers."
+4,t7h9,Window + Balloon,"Yes, that's certainly an excellent way to smuggle in a condom."
+4,t7z9,Window + Coat Hanger,Too high.
+4,t9b3,Window + Fake Uniform,This uniform doesn't lend itself to throwing very well.
+4,t9b4,Window + Cell Phone,"I could throw it, but it would just hit the bars and break. And that would mean I would lose all my favorite apps."
+4,t9d4,Window + Coin,"Would make for a good throwing exercise, but I don't really need the coin up there."
+4,t9p5,Inspect Window,Some thick bars on this one.
+4,i9t8,Window + Floating Cell,"If [D7: Read t9z3. Otherwise:] That's a brilliant idea, and I should definitely do that once I can retrieve it from the inside, but I need to get up there first."
+4,t9z3,Window + Floating Cell,I got it! [Return card #08 to the deck. Cross off B3. Put card #40 into this location. Put card #41 into location 08.]
+4,v1g6,Wall + Coin,"I could flip it over the wall, but why?"
+4,v1i0,Inspect Wall,"Nothing goes in, nothing comes out. Too bad these containers aren't stackable. They probably considered this when they bought them."
+4,v1t0,Wall + Dental Floss,"I can't really throw it, it's too light."
+4,v4i0,Inspect Container,"Ugh! Smells like a bunch of cats had an orgy in here and died. Hey, wait... There's something shiny sticking out at the back, but I can't reach it."
+4,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+5,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+5,i6i0,Inspect Elevator,[If both B5 and F6: Read c0g4. If J2: Read i7e5. Otherwise:] It's protected by a keypad. I'll need a four-digit code. [Cross off J1.]
+5,i7e5,Inspect Elevator,What's this? A keypad ... and another four-digit code?!
+5,k9d3,Door + Screwdriver,I could ... if it wasn't a safety lock. And I'm not really comfortable cracking a lock here in the main hallway.
+5,n0n0,Keypad,Let's type in 2-0-2-0. [Nothing happens.]
+5,s0s0,Keypad,Maybe they forgot to set a code ... [You type in 0-0-0-0.]
+5,s6y5,Keypad,Let's type in 0-6-1-5. [Nothing happens.]
+5,t0r1,Enter Visiting Area,[Go to scene C.]
+5,u2u2,Keypad,"Let's try 4-2-4-2. [The display reads ""Don't Panic!"", but nothing else happens. Take card #42.]"
+5,u4u4,Keypad,[You enter four fours. Nothing happens.)
+5,c0g4,Keypad,"I know the elevator code, I have the blueprints ... but I'm still missing a disguise."
+5,y0l7,Keypad,"Alright, let's try 1-0-6-7. [Read z0p5.]"
+5,y5s6,Keypad,Let's type in 1-5-0-6. [Nothing happens.]
+5,c1r5,Blueprints,"Alright, time to take a closer look at those blueprints. [Cross off K1. Take card #43.]"
+5,y9l4,Keypad,"Alright, let's try the year on the coin, 1-9-6-4. [Nothing happens.]"
+5,y9n2,Keypad,Let's try 1-9-2-2. [Nothing happens.]
+5,f6s1,Keypad,Let's try 7-6-0-1. [Nothing happens.]
+5,y9s4,Keypad,Let's see... 1-9-0-4. [Nothing happens.]
+5,h3k6,Door + Key,Fits like a glove! [Cross off G8. Remove card #18 from the game. Go to location 11.]
+5,h3p5,Inspect Door,"[If G8: Read h6r1. Otherwise:] Locked, naturally."
+5,h6r1,Enter Storage Room,[Go to location 11.]
+5,i1m4,Air Conditioning,"Alright, yeah, let's get some air in! Phew, yeah, that's better."
+5,z0p5,Keypad,[The elevator clanks into motion. Cross off B5. Remove the overlay card #57. If F6: Read c0g4. Otherwise:] But I should probably get a good look at the blueprints first.
+5,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+6,bob3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+6,k8r3,Inspect Safe,"Locked, of course. Another four-digit code?"
+6,i7n0,Safe,"Maybe it's the little girl's birthday and the current year, 6-7-2-0. Nope, nothing."
+6,i7y1,Safe,"OK, this is the last thing I'm trying. 6-7-1-1. [The safe clicks and swings open.] [Cross off A4. Take card #18.]"
+6,n0n0,Safe,[You type in 2-0-2-0.]
+6,n0y1,Safe,"OK, let's go for 2-0-1-1."
+6,p7p5,Inspect Horse,"I'd talk to it, but I think it's a little hoarse."
+6,p9d3,Horse + Screwdriver,"Hey, it opens! ""This is not a Trojan Horse. There's nothing important to find here."""
+6,p9h2,Horse + Snow Globe,A buddy cop movie waiting to happen.
+6,r3v8,Girl + Snow Globe,[Cross off B7. Go to scene D.]
+6,s6w7,Safe,"Little girl's birthday-come on, this has got to be it! 0-6-0-7."
+6,s6y5,Safe,[You type in 0-6-1-5.]
+6,s7w6,Safe,"Little girl's birthday, 0-7-0-6."
+6,i4j9,Computer + Screwdriver,Fly needs me to plug in the transmitter into it.
+6,t4m6,Computer + Transmitter,Great idea! If I actually had the transmitter ... It's in the locker outside.
+6,t5r1,Computer + Transmitter,Great idea! If I actually had the transmitter ... Where did I put it again?
+6,t7e2,Computer + Transmitter,"Alright, we're all set up. [Remove card #03 from the game. Cross off B6.]"
+6,c5g8,Computer + Fake Uniform,Combine it inside first.
+6,i9t4,Computer,"Damn, I was really hoping she would be so grateful that she'd give me her phone."
+6,c5h6,Computer + Fake Uniform,That doesn't make any sense. I need to plug in the transmitter.
+6,t9v3,Computer,"Hm, now what?"
+6,u2u2,Safe,"OK, let's try 4-2-4-2. Who locks up a towel? [Take card #42.]"
+6,f6n0,Safe,"Maybe it's 7-6-2-0. Nope, nothing."
+6,x5p6,Inspect Clock,It's stopped.
+6,f6s1,Safe,"Hey, let's try 7-6-0-1 for no particular reason!"
+6,y0i7,Safe,"Hey, let's try 1-0-6-7 for no particular reason!"
+6,f6y1,Safe,"OK, this is it. 7-6-1-1. [The safe clicks and swings open.] [Cross off A4. Take card #18.]"
+6,g6d3,Safe + Screwdriver,I wish it were that easy.
+6,j8e8,Girl + Floating Cell,No can do. My cell phone is in the locker outside.
+6,j8g0,Girl + Floating Cell,[Go to scene D.]
+6,j8g8,Girl + Fake Uniform,"First, I need to get the uniform inside."
+6,j8h6,Girl + Fake Uniform,[Go to scene D.]
+6,j8i0,Talk to Girl,[Go to Scene D.]
+6,j8t5,Girl + Broom,"I bet she's too ""busy"" to clean up her father's office."
+6,i9i4,Safe,"Alright, year on the coin, 1-9-6-4."
+6,y9n2,Safe,Let's try 1-9-2-2.
+6,y9s4,Safe,"Let's see... 1-9-0-4. ""It's because of you that they have to put 'dont drink' on bleach, isnt it?"""
+6,z0b3,Safe,"Maybe the code Fly sent me, 1-0-6-7. [Nothing happens.)"
+6,y0y0,Safe,"Alright, let's try the time from the clock, 1-0-1-0."
+6,y1i7,Safe,"OK, this is it. 1-1-6-7. [The safe clicks and swings open.] [Cross off A4. Take card #18.]"
+6,i5s6,Safe,[You type in 1-5-0-6.]
+6,j8z0,Girl + Key,She probably shouldn't know that I have it...
+6,k7p5,Inspect Safe,Locked. Looks like I need to figure out the four-digit code. [Cross off 12.]
+6,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+7,bob3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+7,e6t7,Dryer + Matches,Careful... I don't want to set them on fire just yet. [Cross off F1 and K2.]
+7,e6t8,Dryer + Matches,I guess this dryer is hot enough. Thing is ... they're still inside the prison.
+7,e7f4,Dryer + Matches,"Yeah, I guess I could use this to dry them. [Cross off F1 and K2.]"
+7,e7m5,Dryer + Matches,But the matches are already dry.
+7,p1i0,Inspect Soap,"Soap's just... it's just so 20th century, you know?"
+7,p1m4,Soap + Blueprints,I don't think it's necessary to mark where the bathrooms are.
+7,p1p5,Soap + Towel,I'm not gonna take a shower now.
+7,p1r9,Soap + Brick,"Nah, they're both already heavy enough."
+7,p2i0,Inspect Mirror,"Ah, Hook, you handsome devil. [Cross off G1. Take card #20.]"
+7,s3k5,Sink + Toy Badge,washing it is not going to make it more believable.
+7,s3m4,Sink + Matches,Why would I want to make them wet?
+7,s3t7,Sink + Tea Bags,If I only had some hot water.
+7,v9i0,Inspect Vent,This is where the air comes from. It's too high up to reach.
+7,x7h5,Bathroom Stall + Fake Uniform,"Yeah, a little privacy never hurt anyone. [Go to location 09. Add overlay card #57.]"
+7,x7i0,Inspect Bathroom Stall,It's occupied.
+7,x7v8,Bathroom Stall + Cocktail,I don't think I should drink that in here.
+7,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+8,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+8,h6p5,Inspect Pipe,Some people say every house needs these.
+8,p4p5,Inspect Clock,"The best time is 6:30, hands down."
+8,r9d3,Cabinet + Screwdriver,"Yep, that's where I have this bad boy from."
+8,c2e8,Window + Floating Cell,I spent so much time getting it up here; why would I let it go?
+8,i1j9,Open Pipe + Screwdriver,The pipe is already gone.
+8,r9h2,Cabinet + Snow Globe,"No, just no. Why place it on top of a cabinet here?!"
+8,c2i0,Inspect Window,"Perfect, now I just have to reel in that uniform.... [Cross off D7. Take card #22. Remove overlay card #44 and card #34.]"
+8,i9j9,Window + Screwdriver,"if I wanted to open it, I could just... open it."
+8,i9v8,Window + Snow Globe,"I could throw it out, but why?"
+8,v3k6,Cabinet + Key,I don't see a key hole.
+8,k2i0,Inspect Open Pipe,Let's just hope this doesn't lead to the upstairs bathroom.
+8,v3m9,Cabinet + Key,"I got what I needed. And, by the way, it's unlocked..."
+8,c2i7,Inspect Window,Looks like I didn't leave any fingerprints.
+8,k2k7,Open Pipe + Pipe,"Nah, it'll be fine for now."
+8,m2i0,Inspect Window,Finally. Let's pull that in before anyone sees it. [Cross off C7. Take card #08. Remove overlay card #41 and card #40.]
+8,v3p5,Inspect Cabinet,"Well, what do we have here? [Cross off G2. Take card #17.]"
+8,c2j0,Window + Matches,"OK, yeah, let's throw them out. bullseye! [Return card #26. Cross off F2.]"
+8,z9v9,Window + Matches,let's just throw the matches out... [Return card #26. Cross off F2.]
+8,m2j0,Window + Matches,"Alright, let's put it back before anyone notices. [Remove overlay card #45. Locations 09 and 10 are now locked.]"
+8,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+8,c2k7,Window + Pipe,It doesn't fit between the bars.
+8,c2t5,Window + Broom,Throw it out? Seems like it'd be hell to get it back.
+8,c2z0,Window + Key,No need; the window isn't locked.
+8,c6d3,Clock + Screwdriver,I'm not a clockmaker.
+8,d3z4,Matches,"Ah, rats. These matches are soaking wet! [Cross off G6. Take card #26.]"
+8,g8d3,Pipe + Screwdriver,"Whoa, this was way too easy. [Cross off G1. Take card #16. Put card #45.]"
+8,m2k7,Window + Pipe,Window is open. No need to smash it.
+8,m2t5,Window + Broom,Window is open. No need to smash it.
+8,m2z0,Window + Key,Get this: The window. Is. Open.
+8,p1j9,Window + Screwdriver,"if I wanted to open it, I could just... open it."
+8,p1v8,Window + Snow Globe,My cell's no pinata.
+9,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+9,d9b3,Guard + Fake Uniform,Mine looks just like his! [Go to scene A.]
+9,d9i0,Inspect Guard,He's eating. He doesn't seem to notice me.
+9,d9p5,Guard + Postcard,"""Not now, I'm eating. Move on, buddy."""
+9,d9s8,Guard + Screwdriver,"I'm a crook, not a murderer."
+9,g3c7,Prison Map + Blueprints,kitchen is right behind that counter.
+9,g3i0,Inspect Prison Map,It's a map of the prison. We are here.
+9,g3s8,Prison Map + Screwdriver,I don't think I should vandalize the map.
+9,k3i0,Inspect Kitchen Door,Locked.
+9,k3z0,Kitchen Door + Key,Wrong key.
+9,v8m4,Trash + Matches,I'm not going to set the trash on fire.
+9,v8z3,Trash + Fake Uniform,I'm already wearing it.
+9,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+10,bob3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+10,c8k7,Camera + Pipe,the second anyone notices that it's not working they're gonna sound the alarm.
+10,d3j9,Camera + Screwdriver,Can't. It's too high up.
+10,d3m6,Camera + Transmitter,The only thing being transmitted here are your flashes of genius.
+10,d5i8,Guitar,Highway to Hell vs Stairway to Heaven traffic numbers.
+10,m1e5,Pipe,It's blocked from the camera's view by the books.
+10,m5io,Inspect Books,"Self help books. ""My First Shiv"", ""Contraband for Dummies""."
+10,m5k8,Inspect Books,Out of reach.
+10,m5t5,Books + Broom,Why would I?
+10,b5e1,Snow Globe + Pipe,Too far. And the camera would see me.
+10,m5v4,Books + Broom,books start toppling over like dominoes. The last one hits the snow globe. [Cross off D1. Remove card #48. Go to location 09 and read g7e4.]
+10,b5p5,Inspect Snow Globe,Can't reach it without being seen. [Cross off J8.]
+10,b5to,Inspect Snow Globe,Now I just have to get the snow globe to fall into the pipe somehow.
+10,c8e8,Camera + Floating Cell,"Take a photo... Unfortunately, the only app I know is the snake. [Take card #49.]"
+10,c8g8,Camera + Fake Uniform,feed would only show black.
+10,o8io,Inspect Camera,Hate those things.
+10,r6c7,Cards,I'd show you a card trick...
+10,i9x3,,[Put card #48 into this location.]
+10,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+11,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+11,c9t8,Open Air Vent + Floating Cell,"[If C7: Read d0t4. If B3: Read c9v7. Otherwise:] I wish I had that right now, but it's still in a locker outside."
+11,k0j9,Storage Unit + Screwdriver,"Nah, I've got better things to do than taking this thing apart."
+11,b0g8,Cans + Fake Uniform,The colors ain't getting any better than they already are.
+11,t0t0,Broom,I don't need another one.
+11,c9v7,Open Air Vent + Floating Cell,"Yeah, I wish I had that right now, but it's still floating in front of a window."
+11,b0i0,Inspect Cans,"Paint, mostly."
+11,x1i0,Inspect Storage Unit,Nothing of note.
+11,b0t5,Cans + Broom,"It's a broom, not a paint-brush."
+11,d0t4,Open Air Vent + Floating Cell,"[If B6: Read d1r1. Otherwise:] Great idea, but if Fly is caught with contraband, this could go sour."
+11,x1t5,Storage Unit + Broom,It's clean enough ... I think.
+11,b7p5,Inspect Air Vent,It's very high up.
+11,b7t1,Air Vent + Broom,[If H5: Read b7t4. Otherwise:] Maybe I should inspect the prison blueprints a bit closer.
+11,b7t4,Air Vent + Broom,shaft that leads straight up to Fly's cell. [Cross off K3. Remove card #20. Put card #51.]
+11,b7t8,Air Vent + Floating Cell,"Good idea, but it's closed."
+11,b9d3,Air Vent + Screwdriver,I think all it needs is a little nudge and it's gonna fly open.
+11,c9p5,Inspect Open Air Vent,I can see a bit of...
+11,e4j9,Cans + Screwdriver,"[You open one of the cans.] Yep, paint."
+11,j5z9,Books,"""The Evolution of Paper Size, Books 1-3""—Great reading, I'm sure."
+11,d1r1,Open Air Vent + Floating Cell,[You let the balloon float into the air vent. Fly pulls the string. A keycard flutters down! Go to scene G.]
+11,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+12,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+12,g1r7,Bouncer + Coat Hanger,"Er, no, I'm not even gonna try that."
+12,g1r9,Bouncer + Brick,you want my identification? Identify THIS! [Smash brick on bouncer's head. He scratches his nose.]
+12,h9x4,Valve + Lead Pipe,"[Rrrrrgh-pfff] Water flow's back. [Cross off G9. If H1: Read i3m9. Otherwise: Alright, what now?]"
+12,i3m9,,[Go to location 15 and read j5p0 there.]
+12,j7i0,Inspect Valve,"It's a valve, valving away in the night."
+12,k0g4,Inspect Valve,Hm. This thing is stuck.
+12,k1g2,Inspect Valve,I think I'm done with that.
+12,m5e7,Neon Sign,"This is the ""Blue Mamba"", the hottest jazz club in town."
+12,t1z7,Harbor Area,I hear they make port holes round so waves won't hit you square in the face.
+12,z0g2,Bouncer + Cell Phone,I don't have his number.
+12,z0g6,Bouncer + Coin,[Cross off F4. Go to scene J.]
+12,z0g8,Bouncer + Fake Uniform,I don't think this is gonna fool him.
+12,z0i0,Talk to Bouncer,[Go to scene J.]
+12,z0m7,Bouncer + Clothes,He's not a hobo.
+12,z0r3,Graffiti,"Ay Caramba, indeed!"
+12,z0t0,Bouncer + Dental Floss,"Er, I don't think this would be the smartest move."
+12,z0v2,Bouncer + Cocktail,I'm not giving that back!
+12,z0z3,Bouncer + Stamp,[Cross off E9. Go to scene J.]
+12,z6d4,Moon + Coin,"If I hold the coin up to the moon, they look similar. Maybe I need to take my meds."
+12,z6p5,Inspect Moon,All of a sudden it's night. The designer is a complete idiot.
+12,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+12,b2h7,Moon + Blueprints,"If the prison were on the moon, this might help."
+12,b2j6,Moon + Magnet,I wonder if my magnet is strong enough to attract the moon...
+12,b2j8,Moon + Brick,"[The moon crashes into Cantaloop, killing everyone. Take card #28. Engage zombie mode.]"
+12,b2x8,Moon + Condoms,"You've actually never used a condom, have you?"
+12,g1c1,Bouncer + Cereal Box,[Cross off G3. Go to scene J.]
+12,g1e3,Bouncer + Toy Badge,I don't think this is gonna fool him.
+12,g1p0,,That went well. I think I got the first half of my crew.
+12,g1p4,Bouncer + Tea Bags,"[Bouncer crosses his arms and shakes his head.] Hm, guess not."
+13,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+13,b6h8,Rusty Key + Magnet,The key is too far away.
+13,b6r7,Rusty Key + Coat Hanger,Not in front of the bartender.
+13,b6r9,Rusty Key + Brick,Throwing things at the key won't help.
+13,b6v5,Rusty Key + Bottle,Throwing things won't help.
+13,c7j6,Barkeeper + Brick,"Er, no. I don't think I'd stand a chance."
+13,c7k0,Barkeeper + Bottle,[Cross off H7. Go to scene A.]
+13,c7x8,Barkeeper + Condoms,I don't think he's into me.
+13,c7x9,Barkeeper + Tea Bags,[Cross off H8. Go to scene A.]
+13,d5j6,Jukebox + Brick,Everything else in here is already broken.
+13,d5j8,Jukebox + Magnet,Never gonna work.
+13,d5k0,Jukebox + Bottle,[If D9: Read d6t9. Otherwise:] The bottle is empty.
+13,d6t9,Jukebox + Bottle,"Yeah, good idea, but it's not even on."
+13,e3h3,Rusty Key + Rusty Key,I think I'm having an episode of déjà vu ... [Matrix mode.]
+13,e3i0,Inspect Rusty Key,It's out of reach.
+13,e3t0,Rusty Key + Dental Floss,Lasso the key? Never gonna work.
+13,h9d5,Inspect Bottle,An empty plastic bottle. [Cross off C8. Take card #07.]
+13,k1d4,Jukebox + Coin,[Return card #06. If E8: Read k1m9. If E3: Read k1k7. Otherwise: I think the jukebox is not even on.]
+13,k1k7,Jukebox + Coin,Did I just waste a coin on a jukebox that's not even on? [Cross off E8.]
+13,k1m9,Jukebox + Coin,[Go to location 19 and read v9z9 there.]
+13,k1p5,Inspect Jukebox,"plays 37 remixes of ""Boogie Woogie Extravaganza""."
+13,r8i0,Talk to Alice,"[If B1: Read r8k6. Otherwise:] First, I need to get her off that stage."
+13,r8k6,Talk to Alice,Don't want the whole band watching over us as I talk to her.
+13,r8v2,Alice + Cocktail,I don't think she's allowed to drink while working.
+13,v8b4,Barkeeper + Cell Phone,I don't have his number.
+13,v8d4,Barkeeper + Coin,[Cross off H6. Go to scene A.]
+13,v8p5,Talk to Barkeeper,[Go to scene A.]
+13,v8r3,Barkeeper + Cocktail,[Cross off H9. Go to scene A.]
+13,x0t2,Alice + Condoms,[Take card #33.]
+13,x2m7,Alice + Bottle,It's hopeless. She's got her keeper's watchful eyes on me.
+13,z9v7,Today's Newspaper,There's the stamp I gave to the bouncer! IT'S WORTH HOW MUCH?!
+13,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+13,x0v5,Alice + Bottle,[If D9: Read x2m7. Otherwise:] Why would she want an empty bottle?
+14,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+14,i8i0,Inspect WC Door,"[If B1: Read v0b0. If C4: Read i9i5. If E4: Read t8p9. Otherwise:] Locked, naturally."
+14,g3j6,Bar Door + Brick,The barkeeper is right behind this door.
+14,g3j8,Bar Door + Magnet,[You maneuver the key through the window.] Yes! Got it. [Cross off F7. Take card #10.]
+14,h8x3,Broom,"Ugh, it's crawling with maggots."
+14,t8p9,Enter WC,[Go to location 15.]
+14,i9i5,Enter WC,"No, my work here is done."
+14,v0b0,,"(splurch, splurch)... ""Ugh, ewww!"" I should hurry up and get Alice off that stage."
+14,z7b3,Bar Door + Fake Uniform,I could pretend I'm a cop.
+14,z7b5,Bar Door + Rusty Key,"Wrong door, genius."
+14,j9r9,WC Door + Brick,I prefer to solve problems with my brains.
+14,p2h8,Boxes + Magnet,No magnetic objects in here.
+14,p8i0,Inspect Boxes,I prefer thinking outside of the box.
+14,t8h3,WC Door + Rusty Key,"Yup, that's the one. [Cross off E4. Remove card #10.] Ew, what's that smell? [Go to location 15.]"
+14,z7p5,Inspect Bar Door,"[If B1: Read z7v2. Otherwise:] ""Personnel Only""."
+14,z7v2,Enter Bar,"Sure, now that the barkeeper's gone. [Go to location 13.]"
+14,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+15,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+15,j7t9,,[Explosion in the bowl. Molasses oozes out. Cross off C4. This location is now locked. Go to location 13.]
+15,b7v9,Sign,Shouldn't this be above the toilet?
+15,m9z6,,just ... put your hand in... warm soggy oats. [Cross off H1. If G9: Read j5p0. Otherwise: Read p0b8.]
+15,d2j6,Vending Machine + Brick,Think! There's a less violent way to get those condoms.
+15,e2d4,Vending Machine + Coin,"[Remove card #06. Cross off C9. Take card #11.] Hey, look, I got a two-pack!"
+15,k8g6,Trash Can + Coin,[Return card #06. If E8: Read k8h6. If E3: Read k8h5. Otherwise: I'm not gonna retrieve it from here. Cross off E3.]
+15,k8h6,Trash Can + Coin,[Cross off E8.]
+15,e2p5,Inspect Vending Machine,"According to this, they are ""Tobacco-Flavored""."
+15,g2x0,Lead Pipe,"Yup, you're coming with me. [Take card #24.]"
+15,j5p0,,It worked! I can hear the water flooding the pipes. [Read j6e2.]
+15,j6e2,,"Alright, 3, 2, 1... go! [Read j7t9.]"
+15,k8h5,Trash Can + Coin,"Bye, bye, coin! I ain't searching through that."
+15,k8i0,Inspect Trash Can,"Ugh, no, thanks."
+15,m9k0,Toilet + Bottle,"Ugh, no way, I don't need to scoop up whatever that is."
+15,m9x8,Toilet + Condoms,I'll have to get in there pretty good... Keep your eyes on the prize. [Read m9z6.]
+15,z3t2,Inspect Toilet,someone tried to flush down an old banana.
+15,z5m1,Graffiti,"""What did O say to Q?"" Weird."
+15,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+15,p0b8,,"[You flush. Nothing happens.] Damn it, nothing works in this shit hole."
+15,p0p5,Inspect Sink,[Огляд рукомийника.]
+16,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+16,g9x8,Poster + Condoms,"""Solo Experience"" on the box. [Take card #52.]"
+16,m2g1,Broken Lights,I see. That's unfortunate.
+16,m7c2,Fuse Box + Dental Floss,Déjà vu moment here.
+16,m7p5,Inspect Fuse Box,[You flip the switch. Darkness. Alice's melody cuts off. Go to scene E.]
+16,p3g8,Washing Machine + Fake Uniform,Don't think this is necessary.
+16,p3i0,Inspect Washing Machine,This one is filled with bottles.
+16,t1m6,Washing Machine + Transmitter,I don't think it needs cleaning.
+16,t1r9,Washing Machine + Brick,No way! Have you ever seen what a brick can do to a washing machine?
+16,i1t2,Washing Machine + Condoms,Enough clogging up things for a day.
+16,t1v5,Washing Machine + Bottle,"No, genius, that was not a clue."
+16,i5c2,Dark Corner + Dental Floss,I wouldn't know what I'm doing. It's too dark.
+16,b3j6,Helium Bottles + Brick,Don't wanna break them.
+16,b3j8,Helium Bottles + Magnet,"Yup, they're magnetic."
+16,b3x8,Helium Bottles + Condoms,[Remove card #11. Cross off A5. Take card #13.]
+16,t5p5,Inspect Dark Corner,"It's too dark, I can't see."
+16,t5t7,Dark Corner + Matches,[If K2: Read t7h8. If K9: Read t5x3. If F2: Read t5v2. Otherwise: matches are still inside prison.]
+16,t5v2,Dark Corner + Matches,I've thrown them out of a window and never retrieved them.
+16,d0p5,Inspect Bottles,"The bottles say ""Helium""."
+16,d0t7,Helium Bottles + Matches,let's make a giant fire here! [This book will self-destruct in 30 seconds.]
+16,x2p5,Inspect Poster,Why doesn't this surprise me?
+16,g9h7,Poster + Blueprints,This isn't the Shawshank Redemption! There's no hole here!
+16,g9j8,Poster + Magnet,You feel drawn to the poster.
+16,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+16,i5x3,Dark Corner + Matches,The matches are too wet.
+16,t7h8,Dark Corner + Matches,"Alright, let's see what's hiding here. [Remove card #26. Put card #37. Cross off J6.]"
+17,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+17,e9g4,Inspect Dog,He looks friendly. But I wouldn't bet my life on it.
+17,f2h8,Dog + Magnet,I don't think he's attracted to my magnet.
+17,f2i0,Inspect Dog,That dog is huge! No way I'm getting past him.
+17,f2j8,Dog + Brick,"I'm a crook, not an animal abuser."
+17,f2k7,Dog + Lead Pipe,I'm not gonna fight that beast.
+17,f2m7,Dog + Clothes,I don't think he's interested in my fashion sense.
+17,f2s0,Dog + Dental Floss,I'm not gonna floss his teeth.
+17,h0b0,Door,[If J3: Read h0b2. Otherwise:] Locked.
+17,h0b2,Enter Vicarage,[Go to location 18.]
+17,i8p5,Inspect Statues,They look like they've seen better days.
+17,j1i0,Inspect Dog House,Looks like a very comfortable dog house. For a bear.
+17,j1m4,Dog House + Matches,I'm not gonna set his house on fire.
+17,k1i0,Inspect Grave,Here lies... something something.
+17,m2b3,Vicarage,Looks cozy. If you ignore the giant dog and the graveyard.
+17,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+18,d1h3,Switch + Dental Floss,[You flip the switch and tie it down. Remove overlay card #35. Cross off C2.]
+18,d1p5,Inspect Switch,"The switch flips back automatically. Geez, what now?"
+18,d4b7,Beauty Products,"""Eau de Toilette"", ""Fleur du Male"". [Cross off A8. Take card #02.]"
+18,g0r9,Mirror + Brick,The lady's not gonna let me leave if I smash her mirror!
+18,g2h8,Fuse Box + Magnet,I don't need the magnet to open the fuse box.
+18,g2r9,Fuse Box + Brick,"I'm supposed to repair it, not break it."
+18,j2j6,Switch + Brick,The brick is not gonna keep that switch from flipping back.
+18,j2j8,Switch + Magnet,Because science!?
+18,b8z9,Rubber Duck + Coat Hanger,too slippery-and still wet.
+18,j2z9,Switch + Coat Hanger,I'm afraid I'd get electrocuted if I tried that.
+18,x5i0,Inspect Fuse Box,Isn't this a safety hazard? [Cross off J7. Put card #35.]
+18,b9z6,Door,[If C2: Read c0b9. If C3: Read c0b1. Otherwise: transmitter first.]
+18,x5k1,Clothes,I'm taking them. [Cross off A6. Take card #04.]
+18,c0b1,Door,[Go to scene F.]
+18,c0b9,Door,[If A6: Read c0c3. Otherwise: better look around.]
+18,z1i0,Inspect Mirror,hidden compartment. [Cross off C3. Take card #03.]
+18,c0c3,Door,[Cross off K6. Go to scene F.]
+18,d1b4,Switch + Cell Phone,"I'll have to fix this somehow, even if it's just temporary."
+18,z4p5,Inspect Rubber Duck,"robber duck. Thank you, thank you."
+18,d1c2,Switch + Dental Floss,[If C3: Read d1h3. Otherwise: found that transmitter first.]
+18,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+19,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+19,e0c1,Sign,"According to this sign, it's 194 steps to the top."
+19,m6j8,Holy Water + Magnet,Random fact: Banging your head against a wall burns 150 calories.
+19,m6v5,Holy Water + Bottle,[Cross off D9.]
+19,m6b6,Holy Water + Clothes,[If D5: Read m6d2. If H4: Read m6c4. If H3: Read m6b8. Otherwise: already clean.]
+19,m6b8,Holy Water + Clothes,I'll dye the shirt. [Cross off D4.] It's now a light yellow.
+19,m6c4,Holy Water + Clothes,holy water green. Put in these pants? [Cross off D5.]
+19,m6c6,,[Remove card #04. Take card #22.]
+19,m6d2,Holy Water + Clothes,clothes have the right color now.
+19,m6d4,Holy Water + Coin,I wish for you to stop doing stupid things.
+19,m6m9,Inspect Holy Water,The holy water is dyed green.
+19,m6p5,Inspect Holy Water,[If H4: Read m6m9. If H3: Read m6r1. Otherwise: Freshly refilled.]
+19,m6r1,Inspect Holy Water,The holy water is dyed yellow.
+19,m6r3,Holy Water + Cocktail,[If D4: Read m6v2. If H3: Read m6t0. Otherwise: don't want to dye water blue.]
+19,m6t0,Holy Water + Cocktail,Why would I do that?
+19,m6v2,Holy Water + Cocktail,flower has an intense color. [Cross off H4.] blue is mixing with the yellow.
+19,v9z9,,Thou shalt not do silly things for the sole purpose of testing the boundaries of a board game. [Take card #29.]
+19,x4z2,Candle Vendor,One can buy candles here. [Cross off F5. Take card #06.]
+19,x5b3,Candle Vendor,"Sure, let's take another coin. [Take card #06.]"
+19,x5p9,Candle Vendor,I should really find a good use for these. [Take card #06.]
+19,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+20,b0b3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+20,i0t8,View + Floating Cell,winds up here are too strong.
+20,k1v6,Magnet,"Don't know for what exactly, but you never know. [Cross off C6. Take card #15.]"
+20,k6e5,View + Transmitter,what if someone finds it?
+20,k6h7,View + Blueprints,window to the outside that isn't under constant surveillance.
+20,k6h9,View + Balloon,equal parts fun and bad idea.
+20,k6j6,View + Brick,[If A9: Read k6k5. Otherwise: throwing bricks from church towers?]
+20,k6k5,View + Brick,[tie dental floss to handrail. Throw brick onto prison roof below. Cross off K5. Remove card #05. Put card #34.]
+20,z2h8,Handrail + Magnet,handrail does not appear to be magnetic.
+20,z2r9,Handrail + Brick,[If A9: Read z3h4. Otherwise: stupid thing fell down on my foot.]
+20,z3h4,Handrail + Brick,tie one end of the dental floss to the handrail...
+20,z5m9,,"let the uniform go... it zips toward the prison. [Return card #22. Go to loc 04, read r0k9.]"
+20,z7v1,Zip Line + Fake Uniform,transmitter into a pocket. missed a call. [Return card #03. Cross off B9. Go to scene H.]
+20,z9b3,Zip Line + Fake Uniform,[If E6: Read z7v1. Otherwise: what if it falls?]
+20,z9b6,Zip Line + Clothes,I could dry them here.
+20,z9p5,Inspect Zip Line,It's practically invisible.
+20,z9b4,Zip Line + Cell Phone,Too risky.
+20,z9z3,,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+20,b4i0,Inspect Handrail,ultimate skateboarding challenge.
+20,b4t0,Handrail + Dental Floss,throwing it would be difficult...
+20,d8j4,Inspect Brick,brick is loose. [Cross off A7. Take card #05.]
+20,i0b3,View + Fake Uniform,gust of wind would ruin that plan.
+20,i0b4,View + Cell Phone,Would make for a nice photo.
+20,i0c2,View + Dental Floss,"Ever try throwing dental floss, spidey?"
+20,i0d4,View + Coin,"Oops, must've hit a guard dog. [Return card #06. If E8: Read i0e8. If E3: Read i0d9. Otherwise: Cross off E3.]"
+20,i0d9,View + Coin,"Too bad, the dog won't return my coin. [Cross off E8.]"
+20,i0e8,View + Coin,[Go to location 19 and read v9z9 there.]
+20,i0p5,Inspect View,Nice view.
+0,h5t0,Coat Hanger + Dental Floss,"While you're off building crib mobiles, I'll be over here trying to gather a crew, alright?"
+0,h7b3,Cell Phone + Fake Uniform,"I could put it in there, but it might fall out. And I don't want to miss a call."
+0,h7p5,Use Cell Phone,Who you gonna call?
+0,i2b4,Coin + Cell Phone,"I could get to the battery like this, but I don't need it."
+0,i2p5,Use Coin,"Heads or tails? [You flip the coin.] Heads, I knew it! [What did you expect to happen?]"
+0,i2z2,Coin + Magnetic Card,"Dude, this is a key card, not a scratch-off lottery ticket."
+0,i3b1,Dental Floss + Toy Badge,The badge comes with a clip—no need to sew it onto something.
+0,i3c4,Coin,This one's from 1922.
+0,i3e5,Dental Floss + Transmitter,"Ladies and Gentlemen, may I present: the world's worst yo-yo."
+0,i3g4,Dental Floss + Box of Cereal,"Yeah, I bet the maggots inside would eat it all right."
+0,i3h7,Dental Floss + Blueprints,The dental floss holds the blueprints nicely in place.
+0,i3h9,Dental Floss + Balloon,"Yeah, that works well, but what do I put on the other end of the dental floss?"
+0,i3i1,Dental Floss + Lead Pipe,"Nah, I'm not in the mood for science experiments right now. Plus, I wouldn't know what I'm doing anyway."
+0,i3j6,Dental Floss + Brick,Hmmm ... If I tie this around that and make a knot ... OK. Now it's a brick with some dental floss around it. MacGyver would be proud. [Cross off A9.]
+0,i3j8,Dental Floss + Magnet,"Nah, the magnet's too heavy; it'd tear right away."
+0,i3k0,Dental Floss + Bottle,I don't need to swing that bottle.
+0,i3x9,Dental Floss + Tea Bags,The tea bags already come with strings attached.
+0,i5b3,Dental Floss + Fake Uniform,"Let's see ... Nope, no holes that need fixing."
+0,i5b4,Dental Floss + Cell Phone,"I could use the dental floss to tie my cell phone to ... yeah, to what?"
+0,i5b6,Dental Floss + Clothes,"[If J5: Read i5c9. Otherwise:] Let's see ... Nope, no holes that need fixing."
+0,i5c9,Dental Floss + Clothes,"[You look for something in your backpack.] Ah, there it is! [You find a piece of wire which you tie to the dental floss.] Now I can fix that hole I made."
+0,i5d4,Dental Floss + Coin,"Oh yeah, great! This means I could use the coin on a vending machine and then get the coin back ... except this doesn't work in the real world."
+0,i5r3,Dental Floss + Cocktail,Look! Now I've got blue dental floss. Gross.
+0,i5t7,Dental Floss + Matches,"Fire in the hole! ... Oh, I forgot, there's no explosives in this game."
+0,i5t8,Dental Floss + Floating Cell,"Nah, I think that'll hold just fine."
+0,i5x7,Coin,This one's from 1904.
+0,i5z2,Dental Floss + Magnetic Card,Won't work—there's no hole in the card.
+0,i6e3,Magnet + Toy Badge,The badge is made of plastic.
+0,i6x4,Magnet + Lead Pipe,"I wish I had a smaller magnet, then I could watch it take ages to fall through."
+0,i7e8,Transmitter + Floating Cell,Er ... no.
+0,i7g2,Transmitter + Cell Phone,The transmitter doesn't connect with my phone.
+0,i7g6,Transmitter + Coin,I don't wanna open it; what if I break it?
+0,i7g8,Transmitter + Fake Uniform,"[If A3: Read i7h7. Otherwise:] Hm, yeah, I guess if I manage to smuggle in the uniform somehow I could get the transmitter in this way as well. We'll cross that bridge when we come to it."
+0,i7h7,Transmitter + Fake Uniform,I'm not gonna put the transmitter back in; I got it right where I want it.
+0,i7i0,Use Transmitter,Don't ask me; I have no clue how to operate one of these things.
+0,i7m7,Transmitter + Clothes,Hold that thought ...
+0,j0x4,Blueprints + Lead Pipe,The blueprints don't show the plumbing.
+0,j1p5,Use Fake Uniform,"[If D7: Read j1r0. Otherwise:] I could put this on, but not here."
+0,j1r0,Inspect Fake Uniform,"Yup, the transmitter is still in here. Let's take it. [Cross off A3. Take card #03.] Now, let's find a good place to put the uniform on."
+0,j1t7,Fake Uniform + Matches,"Ah come on, it's not that bad."
+0,j4c1,Tea Bags + Box of Cereal,"What, we having breakfast now?"
+0,j5g8,Balloon + Fake Uniform,The uniform is too heavy.
+0,j5j0,Balloon + Matches,"[If F1: Read j6v8. Otherwise:] I could, but they're still wet."
+0,j6v8,Balloon + Matches,[You light a match...] Whoops. I think I could've used that. [Congratulations! You just lost the game...]
+0,j7t8,Bottle,Filled up to the brim with holy water.
+0,j8v8,Screwdriver + Snow Globe,I like this snow globe. I don't wanna break it.
+0,k0x6,Fake Uniform,Now it's on a hanger.
+0,k3c7,Brick + Blueprints,I can use this brick to keep the blueprints flat. Fascinating.
+0,k3t6,Brick + Balloon,"Almost poetic, isn't it?"
+0,k3v5,Brick + Bottle,[If A9: Read k4b8. If D9: Read k3z2. Otherwise:] Why smash a perfectly fine bottle?
+0,k3z2,Brick + Bottle,It's a brick; it's not getting any cleaner. It's practically made of dirt.
+0,k4b8,Brick + Bottle,Why would I tie a bottle to a brick?
+0,k4j8,Coin + Magnet,This confirms my suspicion: coins are indeed magnetic. Wow! [Take card #59.]
+0,k5b1,Clothes + Toy Badge,[If J9: Read k5b8. Otherwise:] Attaching the badge onto these clothes won't fool anyone...
+0,k5b8,Clothes + Toy Badge,"It's not perfect, but it's better than nothing. [Remove card #25. Cross off D6. If D5: Read k5c4.]"
+0,k5c4,Clothes,I think that's as good as it's gonna get. [Cross off K7. Remove card #04. Take card #22.]
+0,k5h7,Clothes + Blueprints,Hmmm ... I'll need a uniform to roam freely in the prison.
+0,k5j6,Clothes + Brick,Brilliant! Now there's a hole in the pants ... [Cross off J5.]
+0,k5k0,Clothes + Bottle,"[If D9: Read k5t5. Otherwise:] Nah, I don't need the bottle in there."
+0,k5t5,Clothes + Bottle,"[If D4 or D5: Read k5v3. Otherwise:] Yeah, alright, let's clean 'em a bit ..."
+0,k5v3,Clothes + Bottle,Why would I wash out the color? After all the trouble I went through to dye these?!
+0,k5x9,Clothes + Tea Bags,"The tea has the right color, but ... what am I supposed to do, rub it in?"
+0,k9b3,Magnetic Card + Fake Uniform,I don't think I'll need this card in the prison.
+0,m1i0,Inspect Tea Bags,"The text on the label is faded out beyond recognition, but it smells like lemon."
+0,m1v2,Tea Bags + Cocktail,"Yeah, the drink would probably change color, but it wouldn't be enough liquid..."
+0,m8c7,Coat Hanger + Blueprints,"If the plans ever get wet, that's how I'll dry 'em."
+0,m8h8,Coat Hanger + Magnet,"Get this: This metal coat hanger... is, indeed, magnetic! Mind. Blown."
+0,m8m6,Coat Hanger + Transmitter,I guess I could build an antenna out of this coat hanger.
+0,m8p4,Coat Hanger + Tea Bags,They're already dry.
+0,m8r9,Coat Hanger + Brick,[If A9: Read m8t1. Otherwise:] I guess I could smash the coat hanger...
+0,m8t1,Coat Hanger + Brick,I could practice my hammer throwing skills with this contraption.
+0,m8t2,Coat Hanger + Condoms,Pretty sure that's not how you use a condom.
+0,m8t6,Coat Hanger + Balloon,"A floating hanger, huh? Could sell it to IKEA..."
+0,p7d3,Pipe + Screwdriver,"Oh yeah, let's scratch something into it. ""I ... like ... wasting time."""
+0,p9t1,Pipe + Broom,Now I have a cleaner pipe than I did before.
+0,r0i0,Inspect Box of Cereal,"The box says ""toy inside"". I wonder if it's still in there."
+0,r0v2,Box of Cereal + Cocktail,"Ooh, a gentleman's breakfast, eh?"
+0,r6b3,Floating Cell + Fake Uniform,The uniform's too heavy.
+0,r6e1,Floating Cell + Pipe,It's like a piñata... you get a broken cell phone.
+0,r6t7,Floating Cell + Matches,"[If D2: Read r8h6. Otherwise:] I could make it go up in flames, but I'd prefer not to."
+0,r8h6,Floating Cell + Matches,Have you learned nothing?!
+0,r9p5,Inspect Cocktail,The drink seems to be dyed blue from an exotic flower. Hmmm ...
+0,t0y1,Box of Cereal,"Hold on... cornflakes, maggots... there it is! [Remove card #23. Cross off G5. Take card #25.]"
+0,t4i0,Inspect Snow Globe,Do prisoners love unicorns? I think I heard something like that.
+0,t4t5,Snow Globe + Broom,I think the broom has served its purpose.
+0,t7b3,Rusty Key + Fake Uniform,I don't think this key will do me any good in the prison.
+0,t7p5,Inspect Rusty Key,It's the key for the Blue Mamba bathroom.
+0,t9d9,Matches,Dry as a bone.
+0,t9j8,Rusty Key + Magnet,"That's right, buddy... keys are magnetic. We're done with this one."
+0,v1c1,Transmitter + Box of Cereal,"Hiding the transmitter in the box won't help. Plus, the maggots might destroy it."
+0,v1c7,Transmitter + Blueprints,These blueprints don't show where the computers are in the prison.
+0,v1h8,Transmitter + Magnet,"Honestly, I have no idea what you're up to, MacGyver."
+0,v1j9,Transmitter + Screwdriver,I'd rather leave this thing as-is lest I break it.
+0,v1t2,Transmitter + Condoms,I don't wanna put it in there; it'd only get drenched in lubricant.
+0,v1t6,Transmitter + Balloon,It's too heavy.
+0,v4p4,Balloon + Tea Bags,Who doesn't like light tea?
+0,v7g2,Condoms + Cell Phone,I don't wanna put it in there; it'd only get drenched in lubricant.
+0,v7g8,Condoms + Fake Uniform,Too big to fit in there.
+0,v7i0,Use Condoms,"Right here?! Get yourself together, man!"
+0,v7j0,Condoms + Matches,"If this were Codenames, I'd say ""hot, 2""."
+0,9g2,Blueprints + Cell Phone,"It'd be much more efficient to take a photo... but I'm old school, OK?"
+0,v9g8,Blueprints + Fake Uniform,I think I memorized them by now.
+0,v9h3,Blueprints + Rusty Key,"These plans are precise, but they're not THAT precise."
+0,v9i0,Inspect Blueprints,"According to these, there's a ventilation shaft... [Cross off H5.]"
+0,v9j0,Blueprints + Matches,[If F1: Read v9p3. Otherwise:] The matches are too wet...
+0,v9p3,Blueprints + Matches,[The blueprints go up in flames. Remove card #09. Cross off H5.]
+0,x0g4,Fake Uniform,It's inside! Finally. Now I need to find a good place to change.
+0,x5x2,Transmitter,"Now that it's inside the prison, what was I gonna do with this again?"
+0,z5m0,Floating Cell,"Finally, it's inside! Now what?"
+0,z6e8,Brick,I tied some dental floss to it.
+0,z8d3,Floating Cell + Screwdriver,"I guess I could pop the balloon, but what good would that do me?"
+0,z8j8,Floating Cell + Magnet,If I attach the magnet to the phone it won't float anymore.
+0,z9z3,Warning Code,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+0,b0b3,Warning Code,"Hey, what are you doing? Nobody told you to read this code! [Take card #39.]"
+0,b1g8,Magnet + Fake Uniform,"Nope, too big."
+0,b1i0,Use Magnet,I can't turn it on. It's never off.
+0,c1g8,Bottle + Fake Uniform,"[If D9: Read c1m4. Otherwise:] Nah, I don't need that bottle in the uniform."
+0,c1m4,Bottle + Fake Uniform,"Yeah, alright, let's clean it a bit ... There, nice and fresh."
+0,c1v2,Bottle + Cocktail,[If D9: Read c2e1. Otherwise:] I'd rather fill the bottle with something ... clean.
+0,c2e1,Bottle + Cocktail,This cocktail's gross no matter how much you dilute it.
+0,d3k9,Clothes,The shirt is a washed-out ochre now... No one's gonna fall for this.
+0,d5i3,Clothes,The pants are dark green now. We're getting there!
+0,d5v5,Clothes,I've attached the badge to the shirt. I think I can pull it off.
+0,d6c1,Bottle + Box of Cereal,We're making breakfast now?
+0,d6p4,Bottle + Tea Bags,"The tea is way past its expiration date, so no thanks."
+0,d6t2,Bottle + Condoms,"[If D9: Read d6v0. Otherwise:] Dude, I know how to put on a condom all right."
+0,d6v0,Bottle + Condoms,I guess I could make a water balloon...
+0,d6x4,Bottle + Lead Pipe,Too big to use it as a straw...
+0,d8e8,Brick + Floating Cell,"Sure, after all this trouble, let's weigh it down again."
+0,d8g2,Brick + Cell Phone,[If A9: Read d8g4. Otherwise:] That's what phones used to look like...
+0,d8g4,Brick + Cell Phone,I'm pretty sure it'll break my cell eventually.
+0,d8g8,Brick + Fake Uniform,"That's a really good idea ... wait, no, now the uniform's all dirty."
+0,d8h3,Brick + Rusty Key,[If A9: Read d8h9. Otherwise:] This key's in pretty bad shape already.
+0,d8h9,Brick + Rusty Key,Worst. Keychain. Ever!
+0,d8i0,Use Brick,I think I'll just hold on to this until I know what to do with it.
+0,e1p5,Use Clothes,Nothing in the pockets. And I don't see a reason why I should put them on.
+0,e1r3,Clothes + Cocktail,That would only dye 'em blue.
+0,e5b3,Broom + Fake Uniform,I guess I could build a scarecrow...
+0,e5t7,Broom + Matches,"I mean, I could use it as a torch..."
+0,e6b2,Postcard,[You can use the postcard to travel to any location...]
+0,g6p5,Inspect Key,"The label says ""Storage Room""."
+0,h3j8,Magnetic Card + Magnet,"Man, great idea, let's make this card completely useless... [Take card #58.]"
+0,h4h9,Cell Phone + Balloon,"[If A8: Read h4i0. Otherwise:] No matter what I do, the cell phone's always gonna fall off."
+0,h4i0,Cell Phone + Balloon,[Remove cards #12 and #13. Cross off F8. Take card #08.]
+0,h4j8,Cell Phone + Magnet,It can wipe my memory... I'd really hate to forget my main objective.
+0,h4x9,Cell Phone + Tea Bags,Mike probably has better things to do than laugh at my jokes.
+0,h5e8,Coat Hanger + Floating Cell,"Nope, too heavy."
+0,h5g8,Coat Hanger + Fake Uniform,I didn't think this would be possible but it totally works! [Cross off E6. Remove card #01.]
+0,h5m7,Coat Hanger + Clothes,"Mmh, yeah, seems to make sense, but... why?"

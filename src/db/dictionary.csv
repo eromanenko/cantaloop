@@ -1,0 +1,56 @@
+Table,Id,EN,UK,RU
+scene,Z,Prologue,Пролог,Пролог
+scene,A,Blue Mamba Barkeeper,"Бармен ""Блакитної Мамби""",Бармен «Голубой Мамбы»
+scene,B,National Archive Secretary,Секретар Національного архіву,Секретарь Национального архива
+scene,C,Visiting Fly in Prison,Відвідування Мухи у в'язниці,Посещение Мухи в тюрьме
+scene,D,Girl in Warden's Office,Дівчина в кабінеті начальника,Девушка в кабинете начальника
+scene,E,Alice Outside Blue Mamba,"Аліса біля ""Блакитної Мамби""",Алиса у «Голубой Мамбы»
+scene,F,Woman in Fly's Apartment,Жінка в квартирі Мухи,Женщина в квартире Мухи
+scene,G,Breaking Fly Out,Визволення Мухи,Освобождение Мухи
+scene,H,Fly's Voice Mail,Голосова пошта Мухи,Голосовая почта Мухи
+scene,J,Blue Mamba Bouncer,"Вишибала ""Блакитної Мамби""",Вышибала «Голубой Мамбы»
+scene,K,The Woman In Red,Жінка в червоному,Женщина в красном
+scene,L,Prison Guard,Тюремний охоронець,Тюремный охранник
+location,0,Inventory,Інвентар,Инвентарь
+location,1,Inside the Lighthouse,Всередині маяка,Внутри маяка
+location,2,Outside the Lighthouse,Біля маяка,Снаружи маяка
+location,3,Prison Entrance Area,Вхід до в'язниці,Вход в тюрьму
+location,4,Prison Backyard,Подвір'я в'язниці,Тюремный двор
+location,5,Prison Hallway,Коридор в'язниці,Тюремный коридор
+location,6,Prison Director's Office,Кабінет начальника в'язниці,Кабинет начальника тюрьмы
+location,7,Prison Bathroom,Вбиральня в'язниці,Тюремный туалет
+location,8,Prison Guard's Room,Кімната охорони,Комната охраны
+location,9,Prison Mess Hall,Тюремна їдальня,Тюремная столовая
+location,10,Prison Recreation Room,Кімната відпочинку,Комната отдыха
+location,11,Prison Storage Room,Тюремна комора,Тюремная кладовая
+location,12,Outside the Blue Mamba,"Біля ""Блакитної Мамби""",Снаружи «Голубой Мамбы»
+location,13,Inside the Blue Mamba,"Всередині ""Блакитної Мамби""",Внутри «Голубой Мамбы»
+location,14,Blue Mamba Hallway,"Коридор ""Блакитної Мамби""",Коридор «Голубой Мамбы»
+location,15,Blue Mamba Bathroom,"Вбиральня ""Блакитної Мамби""",Туалет «Голубой Мамбы»
+location,16,Blue Mamba Basement,"Підвал ""Блакитної Мамби""",Подвал «Голубой Мамбы»
+location,17,Vicarage,Будинок священника,Дом священника
+location,18,Bathroom in Fly's Apartment,Вбиральня в квартирі Мухи,Туалет в квартире Мухи
+location,19,Church,Церква,Церковь
+location,20,Church Tower,Церковна вежа,Церковная башня
+ui,menu_title,Game State,Стан гри,Состояние игры
+ui,tab_scenes,Scenes,Сцени,Сцены
+ui,tab_codes,Codes,Коди,Коды
+ui,tab_hints,Hints,Підказки,Подсказки
+ui,tab_triggers,Triggers,Тригери,Триггеры
+ui,tab_inventory,Inventory,Інвентар,Инвентарь
+ui,select_scene,Choose scene...,Оберіть сцену...,Выберите сцену...
+ui,select_location,Choose location...,Оберіть локацію...,Выберите локацию...
+ui,empty_state_title,Listening Mode,Режим прослуховування,Режим прослушивания
+ui,empty_state_desc,Select a scene to load Hook's dialogue protocols.,"Оберіть сцену, щоб завантажити протоколи діалогів.","Выберите сцену, чтобы загрузить протоколы диалогов."
+ui,back_to_list,← BACK TO LIST,← НАЗАД ДО СПИСКУ,← НАЗАД К СПИСКУ
+ui,if_trigger,IF TRIGGER,ЯКЩО ТРИГЕР,ЕСЛИ ТРИГГЕР
+ui,solution,SOLUTION,РІШЕННЯ,РЕШЕНИЕ
+ui,hint,HINT,ПІДКАЗКА,ПОДСКАЗКА
+ui,loading,LOADING_PROTOCOLS...,ЗАВАНТАЖЕННЯ_ПРОТОКОЛІВ...,ЗАГРУЗКА_ПРОТОКОЛОВ...
+ui,checklist_title,Trigger Checklist,Список тригерів,Список триггеров
+ui,checklist_note,Mark triggers only when the game tells you to.,"Відмічайте тригери лише тоді, коли гра просить про це.","Отмечайте триггеры только тогда, когда игра просит об этом."
+ui,inventory_title,Items & Cards,Предмети та картки,Предметы и карточки
+ui,inventory_note,Tap the numbers of the cards you physically have in your hand.,"Натисніть на номери карток, які ви фізично тримаєте в руках.","Нажмите на номера карточек, которые вы физически держите в руках."
+ui,reset_all,Reset Progress,Скинути прогрес,Сбросить прогресс
+ui,reset_confirm,Are you sure? All triggers and items will be deleted!,Ви впевнені? Усі тригери та предмети будуть видалені!,Вы уверены? Все триггеры и предметы будут удалены!
+ui,install_app,Install app,Встановити,Установить
