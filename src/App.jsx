@@ -15,6 +15,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [loadProgress, setLoadProgress] = useState(0); // Progress percentage
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState(null);
 
   const [activeTriggers, setActiveTriggers] = usePersistentState('active_triggers', []);
@@ -60,12 +61,10 @@ export default function App() {
 
   /* Destructive action: wipes all saved data and reloads app */
   const handleReset = () => {
-    if (window.confirm(t('reset_confirm'))) {
-      localStorage.removeItem('active_triggers');
-      localStorage.removeItem('game_inventory');
-      localStorage.removeItem('active_tab');
-      window.location.reload();
-    }
+    localStorage.removeItem('active_triggers');
+    localStorage.removeItem('game_inventory');
+    localStorage.removeItem('active_tab');
+    window.location.reload();
   };
 
   if (loading && !data) {
@@ -173,7 +172,7 @@ export default function App() {
                   </button>
                 )}
                 <button
-                  onClick={handleReset}
+                  onClick={() => setShowResetConfirm(true)}
                   className="w-full p-4 rounded-xl flex items-center gap-3 text-red-500 font-bold bg-red-50 hover:bg-red-100 transition-colors"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -198,6 +197,38 @@ export default function App() {
         {tab === 'Triggers' && <TriggersTab activeTriggers={activeTriggers} onToggle={toggleTrigger} t={t} />}
         {tab === 'Inventory' && <InventoryTab inventory={inventory} onToggle={toggleCard} t={t} />}
       </main>
+
+      {/* Reset Confirmation Modal */}
+      {showResetConfirm && (
+        <div className="fixed inset-0 z-[70] flex items-center justify-center p-6">
+          <div className="absolute inset-0 bg-slate-900/50 backdrop-blur-sm" onClick={() => setShowResetConfirm(false)}></div>
+          <div className="relative bg-white rounded-2xl shadow-2xl max-w-sm w-full p-6 animate-in zoom-in-95 duration-200">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                </svg>
+              </div>
+              <h3 className="font-black text-slate-900 text-lg">{t('reset_all')}</h3>
+            </div>
+            <p className="text-slate-600 text-sm mb-6 leading-relaxed">{t('reset_confirm')}</p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowResetConfirm(false)}
+                className="flex-1 py-3 rounded-xl border-2 border-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-50 transition-colors"
+              >
+                {t('cancel') || 'Скасувати'}
+              </button>
+              <button
+                onClick={handleReset}
+                className="flex-1 py-3 rounded-xl bg-red-600 text-white font-bold text-sm hover:bg-red-700 transition-colors shadow-md"
+              >
+                {t('reset_all')}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

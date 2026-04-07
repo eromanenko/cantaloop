@@ -54,3 +54,4 @@ ui,inventory_note,Tap the numbers of the cards you physically have in your hand.
 ui,reset_all,Reset Progress,Скинути прогрес,Сбросить прогресс
 ui,reset_confirm,Are you sure? All triggers and items will be deleted!,Ви впевнені? Усі тригери та предмети будуть видалені!,Вы уверены? Все триггеры и предметы будут удалены!
 ui,install_app,Install app,Встановити,Установить
+ui,cancel,Cancel,Скасувати,Отменить

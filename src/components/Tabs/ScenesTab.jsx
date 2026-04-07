@@ -1,6 +1,7 @@
 import React from 'react';
 import { usePersistentState } from '../../hooks/usePersistentState';
 import { TextFormatter } from '../Shared/TextFormatter';
+import { getAvatar } from '../../services/avatars';
 
 export const ScenesTab = ({ data, lang, t, onCodeClick, activeTriggers, inventory, toggleCard, toggleTrigger }) => {
   const [sceneId, setSceneId] = usePersistentState('current_scene', '');
@@ -94,13 +95,13 @@ const ChatLine = ({ line, lang, onCodeClick, activeTriggers, inventory, toggleCa
       </div>
     );
   }
-  const avatarPath = `/avatars/${line.Person.toLowerCase().trim()}.png`;
+  const avatarSrc = getAvatar(line.Person);
   const isHook = line.Person.toLowerCase() === 'hook';
 
   return (
     <div className={`flex items-end space-x-2 mb-2 ${isHook ? 'flex-row-reverse space-x-reverse' : 'flex-row'}`}>
       <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-200 border border-slate-300 overflow-hidden shadow-sm">
-        <img src={avatarPath} alt="" onError={(e) => { e.target.src = 'https://ui-avatars.com/api/?background=cbd5e1&color=64748b&name=' + line.Person; }} className="w-full h-full object-cover" />
+        <img src={avatarSrc} alt="" className="w-full h-full object-cover" />
       </div>
       <div className={`flex flex-col ${isHook ? 'items-end' : 'items-start'}`}>
         <span className="text-[9px] font-bold text-slate-400 uppercase tracking-tighter mb-1 px-1 italic">{line.Person}</span>

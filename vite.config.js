@@ -1,9 +1,11 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
+import csvPlugin from "./plugins/vite-plugin-csv.mjs";
 
 export default defineConfig({
   plugins: [
+    csvPlugin(),
     react(),
     VitePWA({
       registerType: 'autoUpdate',

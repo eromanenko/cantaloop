@@ -1,36 +1,29 @@
-import Papa from "papaparse";
+/**
+ * Game data service.
+ *
+ * CSV files are converted to JSON arrays at build time by vite-plugin-csv.
+ * No runtime parsing needed — PapaParse is gone.
+ */
 
-/* Import CSV files as raw strings via Vite */
-import dictionaryCsv from "../db/dictionary.csv?raw";
-import b1dialogsCsv from "../db/b1dialogs.csv?raw";
-import b1ukCsv from "../db/b1uk.csv?raw";
-import b1ruCsv from "../db/b1ru.csv?raw";
-import b1enCsv from "../db/b1en.csv?raw";
-import b1henCsv from "../db/b1hen.csv?raw";
-import b1hukCsv from "../db/b1huk.csv?raw";
-import b1hruCsv from "../db/b1hru.csv?raw";
-
-const parseCsv = (csvString) =>
-  Papa.parse(csvString, { header: true, skipEmptyLines: true }).data;
+import dict from "../db/dictionary.csv";
+import dialogs from "../db/b1dialogs.csv";
+import codesUK from "../db/b1uk.csv";
+import codesRU from "../db/b1ru.csv";
+import codesEN from "../db/b1en.csv";
+import hintsEN from "../db/b1hen.csv";
+import hintsUK from "../db/b1huk.csv";
+import hintsRU from "../db/b1hru.csv";
 
 /**
- * Returns all game data synchronously from bundled CSV files.
+ * Returns all game data from bundled CSV files.
  * @param {Function} [onProgress] - Optional callback (receives 100 immediately).
  */
 export const fetchAllGameData = (onProgress) => {
   const data = {
-    dict: parseCsv(dictionaryCsv),
-    dialogs: parseCsv(b1dialogsCsv),
-    codes: {
-      UK: parseCsv(b1ukCsv),
-      RU: parseCsv(b1ruCsv),
-      EN: parseCsv(b1enCsv),
-    },
-    hints: {
-      UK: parseCsv(b1hukCsv),
-      RU: parseCsv(b1hruCsv),
-      EN: parseCsv(b1henCsv),
-    },
+    dict,
+    dialogs,
+    codes: { UK: codesUK, RU: codesRU, EN: codesEN },
+    hints: { UK: hintsUK, RU: hintsRU, EN: hintsEN },
   };
 
   if (onProgress) onProgress(100);
